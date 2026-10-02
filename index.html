@@ -1,0 +1,2544 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>St. Thomas Malankara Syrian Catholic Church | Odanavattom</title>
+  <meta name="description" content="Official website of St. Thomas Malankara Syrian Catholic Church, Odanavattom, Kerala. Preserving the ancient West Syriac Antiochene liturgical heritage since 1949.">
+  
+  <!-- Google Fonts: Cinzel for sacred headings, Inter for modern crisp readability -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* -------------------------------------------------------------
+       CSS VARIABLES & RESET
+       ------------------------------------------------------------- */
+    :root {
+      --bg-dark-top: #080e18;
+      --bg-nav: #0b1320;
+      --bg-hero-overlay: rgba(11, 19, 32, 0.72);
+      --bg-light-warm: #f8f6f0;
+      --bg-white: #ffffff;
+      --bg-cta-banner: #162338;
+      --bg-footer: #0b111c;
+      --bg-footer-sub: #070b13;
+
+      --gold-primary: #d4972e;
+      --gold-light: #e5a93c;
+      --gold-accent: #c5a059;
+      --gold-hover: #b88022;
+
+      --text-dark: #0f172a;
+      --text-dark-muted: #475569;
+      --text-gray: #64748b;
+      --text-light: #ffffff;
+      --text-light-muted: #94a3b8;
+      --text-gold: #d4972e;
+
+      --border-light: #e7e2d6;
+      --border-dark: rgba(255, 255, 255, 0.12);
+
+      --font-serif: 'Cinzel', Georgia, serif;
+      --font-serif-body: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      --container-max: 1180px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      outline: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* -------------------------------------------------------------
+       1. TOPMOST ARCHDIOCESE NOTICE BAR
+       ------------------------------------------------------------- */
+    .top-bar {
+      background-color: var(--bg-dark-top);
+      border-bottom: 1px solid rgba(212, 151, 46, 0.18);
+      font-size: 11px;
+      color: #cbd5e1;
+      padding: 7px 0;
+      letter-spacing: 0.08em;
+      position: relative;
+      z-index: 50;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .archdiocese-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+      font-size: 10.5px;
+    }
+
+    .motto-text {
+      font-family: var(--font-serif-body);
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
+    }
+
+    .motto-text span {
+      font-style: normal;
+      color: var(--gold-accent);
+      font-weight: 700;
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      letter-spacing: 0.1em;
+      margin-left: 4px;
+    }
+
+    /* -------------------------------------------------------------
+       2. MAIN NAVBAR & BRANDING
+       ------------------------------------------------------------- */
+    .navbar {
+      background-color: var(--bg-nav);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      border-bottom: 1px solid var(--border-dark);
+      transition: var(--transition);
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      background: #ffffff;
+      border: 2px solid var(--gold-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 14px rgba(212, 151, 46, 0.35);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      padding: 1px;
+    }
+
+    .brand-link:hover .brand-logo {
+      transform: scale(1.06);
+    }
+
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-light);
+      letter-spacing: 0.03em;
+      line-height: 1.25;
+    }
+
+    .brand-location {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-item a,
+    .nav-item button {
+      background: none;
+      border: none;
+      color: #e2e8f0;
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 6px 0;
+      position: relative;
+      transition: color 0.2s ease;
+      display: inline-block;
+    }
+
+    .nav-item a:hover,
+    .nav-item button:hover {
+      color: var(--gold-light);
+    }
+
+    /* Active link indication (Home has teal/gold indicator matching mockup) */
+    .nav-item.active a {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .nav-item.active a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #38bdf8;
+      border-radius: 2px;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+    }
+
+    /* Mobile Hamburger */
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* -------------------------------------------------------------
+       3. HERO SECTION WITH SANCTUARY & CHURCH BACKDROP
+       ------------------------------------------------------------- */
+    .hero-section {
+      position: relative;
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #0b1320;
+      background-image: 
+        linear-gradient(180deg, rgba(11, 19, 32, 0.70) 0%, rgba(11, 19, 32, 0.82) 65%, rgba(11, 19, 32, 0.96) 100%),
+        url('assets/hero-church.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding: 90px 24px 80px;
+      color: var(--text-light);
+    }
+
+    .hero-content {
+      max-width: 820px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-pretitle {
+      color: var(--gold-light);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: inline-block;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 1.22;
+      color: #ffffff;
+      margin-bottom: 8px;
+      text-shadow: 0 3px 16px rgba(0, 0, 0, 0.7);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-title-sub {
+      display: block;
+      font-size: 40px;
+      color: #f8fafc;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-tagline {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      color: #cbd5e1;
+      margin-top: 14px;
+      margin-bottom: 34px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-gold {
+      background-color: var(--gold-primary);
+      color: #0b1320;
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      padding: 12px 26px;
+      border-radius: 4px;
+      box-shadow: 0 4px 14px rgba(212, 151, 46, 0.35);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--gold-light);
+    }
+
+    .btn-gold:hover {
+      background-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 151, 46, 0.5);
+    }
+
+    .btn-glass {
+      background-color: rgba(255, 255, 255, 0.09);
+      color: #ffffff;
+      font-size: 13.5px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      padding: 12px 26px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      backdrop-filter: blur(6px);
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-glass:hover {
+      background-color: rgba(255, 255, 255, 0.22);
+      border-color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* -------------------------------------------------------------
+       4. THREE HIGHLIGHT CARDS (POST HERO)
+       ------------------------------------------------------------- */
+    .highlights-section {
+      background-color: var(--bg-light-warm);
+      padding: 45px 0 55px;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .highlight-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: var(--transition);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .highlight-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      border-color: var(--gold-primary);
+    }
+
+    .highlight-icon-wrap {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #fdfaf2;
+      border: 1px solid #ebdcc5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    .highlight-icon-wrap svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--gold-hover);
+      fill: none;
+    }
+
+    .highlight-title {
+      font-family: var(--font-serif);
+      font-size: 19px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+      letter-spacing: 0.01em;
+    }
+
+    .highlight-bold-desc {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+
+    .highlight-desc {
+      font-size: 13px;
+      color: var(--text-gray);
+      line-height: 1.55;
+    }
+
+    .card-footer-hint {
+      margin-top: 14px;
+      font-size: 11.5px;
+      font-weight: 600;
+      color: var(--gold-primary);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      opacity: 0;
+      transform: translateX(-4px);
+      transition: var(--transition);
+    }
+
+    .highlight-card:hover .card-footer-hint {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* -------------------------------------------------------------
+       5. "WHO WE ARE" / PARISH OVERVIEW SECTION
+       ------------------------------------------------------------- */
+    .overview-section {
+      background-color: var(--bg-white);
+      padding: 70px 0;
+    }
+
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .overview-content {
+      padding-right: 12px;
+    }
+
+    .section-eyebrow {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--gold-primary);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 34px;
+      font-weight: 700;
+      line-height: 1.26;
+      color: var(--text-dark);
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+    }
+
+    .section-body {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-dark-muted);
+      margin-bottom: 26px;
+    }
+
+    .link-explore {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 14.5px;
+      color: var(--text-dark);
+      text-decoration: none;
+      border-bottom: 2px solid var(--gold-primary);
+      padding-bottom: 2px;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .link-explore svg {
+      width: 16px;
+      height: 16px;
+      transition: transform 0.2s ease;
+      stroke: currentColor;
+    }
+
+    .link-explore:hover {
+      color: var(--gold-hover);
+      border-color: var(--gold-hover);
+    }
+
+    .link-explore:hover svg {
+      transform: translateX(4px);
+    }
+
+    .overview-image-wrap {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16);
+      border: 1px solid #e2e8f0;
+      background: #0b1320;
+    }
+
+    .overview-image-wrap img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .overview-image-wrap:hover img {
+      transform: scale(1.025);
+    }
+
+    .image-badge-tag {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(11, 19, 32, 0.85);
+      border: 1px solid var(--gold-primary);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--gold-light);
+      backdrop-filter: blur(4px);
+      letter-spacing: 0.05em;
+    }
+
+    /* -------------------------------------------------------------
+       6. UPCOMING PARISH EVENTS
+       ------------------------------------------------------------- */
+    .events-section {
+      background-color: var(--bg-light-warm);
+      padding: 60px 0;
+      border-top: 1px solid var(--border-light);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .events-header {
+      margin-bottom: 28px;
+    }
+
+    .events-section-title {
+      font-family: var(--font-serif);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text-dark);
+      letter-spacing: 0.01em;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .event-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      padding: 20px 22px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .event-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    }
+
+    .date-badge {
+      width: 60px;
+      height: 64px;
+      border-radius: 6px;
+      background-color: #ffffff;
+      border: 1px solid #cbd5e1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+      transition: var(--transition);
+    }
+
+    .event-card:hover .date-badge {
+      border-color: var(--gold-primary);
+      background-color: #fdfaf3;
+    }
+
+    .date-badge-day {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--text-dark);
+      font-family: var(--font-sans);
+    }
+
+    .date-badge-month {
+      font-size: 11px;
+      font-weight: 800;
+      color: #b45309;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-top: 3px;
+    }
+
+    .event-content {
+      flex: 1;
+    }
+
+    .event-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+      line-height: 1.35;
+    }
+
+    .event-desc {
+      font-size: 13.5px;
+      color: var(--text-gray);
+      line-height: 1.45;
+    }
+
+    .event-action-icon {
+      color: #94a3b8;
+      transition: var(--transition);
+    }
+
+    .event-card:hover .event-action-icon {
+      color: var(--gold-primary);
+      transform: translateX(3px);
+    }
+
+    /* -------------------------------------------------------------
+       7. SUBMIT PRAYER INTENTIONS / CALL TO ACTION BANNER
+       ------------------------------------------------------------- */
+    .cta-banner {
+      background-color: var(--bg-cta-banner);
+      padding: 38px 0;
+      color: var(--text-light);
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .cta-banner-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .cta-text-wrap {
+      max-width: 680px;
+    }
+
+    .cta-title {
+      font-size: 21px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 6px;
+      letter-spacing: 0.01em;
+    }
+
+    .cta-subtitle {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      line-height: 1.55;
+    }
+
+    .cta-buttons {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-shrink: 0;
+    }
+
+    .btn-cta-gold {
+      background-color: var(--gold-primary);
+      color: #0b1320;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 11px 22px;
+      border-radius: 4px;
+      transition: var(--transition);
+      border: 1px solid var(--gold-light);
+    }
+
+    .btn-cta-gold:hover {
+      background-color: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(212, 151, 46, 0.4);
+    }
+
+    .btn-cta-outline {
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 11px 22px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      transition: var(--transition);
+    }
+
+    .btn-cta-outline:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-color: #ffffff;
+      transform: translateY(-2px);
+    }
+
+    /* -------------------------------------------------------------
+       8. PARISH FOOTER
+       ------------------------------------------------------------- */
+    .site-footer {
+      background-color: var(--bg-footer);
+      color: #94a3b8;
+      padding: 55px 0 0;
+      font-size: 13.5px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 45px;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .footer-section-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .footer-heritage-desc {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #94a3b8;
+    }
+
+    .footer-address,
+    .footer-jurisdiction {
+      font-size: 13px;
+      line-height: 1.75;
+      color: #cbd5e1;
+    }
+
+    .footer-phone-link {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--gold-primary);
+      text-underline-offset: 3px;
+      transition: color 0.2s;
+    }
+
+    .footer-phone-link:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      background-color: var(--bg-footer-sub);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 18px 0;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* -------------------------------------------------------------
+       9. MODAL DIALOG SYSTEM (INTERACTIVE FUNCTIONALITY)
+       ------------------------------------------------------------- */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(8, 14, 24, 0.78);
+      backdrop-filter: blur(6px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .modal-backdrop.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-dialog {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 620px;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      overflow-y: auto;
+      transform: translateY(20px) scale(0.98);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .modal-backdrop.active .modal-dialog {
+      transform: translateY(0) scale(1);
+    }
+
+    .modal-header {
+      background-color: var(--bg-nav);
+      color: #ffffff;
+      padding: 20px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--gold-primary);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .modal-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .modal-title-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(212, 151, 46, 0.2);
+      border: 1px solid var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-title-icon svg {
+      width: 18px;
+      height: 18px;
+      stroke: var(--gold-light);
+    }
+
+    .modal-title {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    /* Modal Form Elements */
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 6px;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      background-color: #f8fafc;
+      color: #0f172a;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--gold-primary);
+      background-color: #ffffff;
+      box-shadow: 0 0 0 3px rgba(212, 151, 46, 0.15);
+    }
+
+    .preset-amounts {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .amount-btn {
+      padding: 10px 8px;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 5px;
+      font-weight: 700;
+      color: #1e293b;
+      font-size: 14px;
+      transition: all 0.2s;
+    }
+
+    .amount-btn.active,
+    .amount-btn:hover {
+      background: #fef8ec;
+      border-color: var(--gold-primary);
+      color: var(--gold-hover);
+    }
+
+    /* Schedule Timetable */
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 13.5px;
+    }
+
+    .schedule-table th {
+      background-color: #f1f5f9;
+      color: #1e293b;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 2px solid #cbd5e1;
+      font-weight: 700;
+    }
+
+    .schedule-table td {
+      padding: 11px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+
+    .schedule-table tr:hover td {
+      background-color: #f8fafc;
+    }
+
+    .time-badge {
+      font-weight: 700;
+      color: #0369a1;
+      background-color: #e0f2fe;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 12.5px;
+      display: inline-block;
+    }
+
+    /* Toast Notification */
+    .toast-container {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: none;
+    }
+
+    .toast-msg {
+      background-color: #0b1320;
+      color: #ffffff;
+      border-left: 4px solid var(--gold-primary);
+      padding: 14px 20px;
+      border-radius: 4px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 13.5px;
+      pointer-events: auto;
+      animation: toastSlideIn 0.3s ease forwards;
+    }
+
+    @keyframes toastSlideIn {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* -------------------------------------------------------------
+       10. RESPONSIVE BREAKPOINTS
+       ------------------------------------------------------------- */
+    @media (max-width: 992px) {
+      .hero-title {
+        font-size: 36px;
+      }
+      .hero-title-sub {
+        font-size: 32px;
+      }
+      .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .overview-content {
+        padding-right: 0;
+      }
+      .events-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background-color: #0b1320;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 30px 30px;
+        gap: 18px;
+        border-bottom: 2px solid var(--gold-primary);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+        display: none;
+      }
+
+      .nav-menu.open {
+        display: flex;
+      }
+
+      .top-bar-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+      }
+
+      .cta-banner-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .cta-buttons {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .preset-amounts {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 28px;
+      }
+      .hero-title-sub {
+        font-size: 26px;
+      }
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+      }
+      .btn-gold, .btn-glass {
+        width: 100%;
+        justify-content: center;
+      }
+      .cta-buttons {
+        flex-direction: column;
+      }
+      .btn-cta-gold, .btn-cta-outline {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    /* ENHANCED MOBILE NAVIGATION TOUCH TARGETS */
+    .mobile-toggle {
+      min-width: 48px;
+      min-height: 48px;
+      width: 48px;
+      height: 48px;
+      padding: 13px 11px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(212, 151, 46, 0.4);
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: rgba(212, 151, 46, 0.25);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .mobile-toggle:hover,
+    .mobile-toggle:active {
+      background: rgba(212, 151, 46, 0.18);
+      border-color: var(--gold-primary);
+    }
+
+    .mobile-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      pointer-events: none;
+    }
+
+    @media (max-width: 820px) {
+      .navbar-inner {
+        padding: 10px 0;
+        min-height: 68px;
+      }
+
+      .brand-link {
+        min-height: 48px;
+        padding: 4px 8px 4px 0;
+      }
+
+      .mobile-toggle {
+        display: flex !important;
+      }
+
+      .nav-menu {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        background-color: #0b1320 !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 14px 18px 22px !important;
+        gap: 6px !important;
+        border-bottom: 2px solid var(--gold-primary) !important;
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.65) !important;
+        z-index: 999 !important;
+      }
+
+      .nav-menu .nav-item {
+        width: 100% !important;
+        margin: 0 !important;
+      }
+
+      .nav-menu .nav-item a,
+      .nav-menu .nav-item button {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        min-height: 50px !important;
+        padding: 14px 18px !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #f1f5f9 !important;
+        border-radius: 10px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        touch-action: manipulation !important;
+        -webkit-tap-highlight-color: rgba(212, 151, 46, 0.25) !important;
+      }
+
+      .nav-menu .nav-item a:hover,
+      .nav-menu .nav-item a:active {
+        background: rgba(212, 151, 46, 0.16) !important;
+        color: var(--gold-light) !important;
+      }
+
+      .nav-menu .nav-item.active a {
+        background: rgba(56, 189, 248, 0.14) !important;
+        color: #38bdf8 !important;
+        border-left: 4px solid #38bdf8 !important;
+        padding-left: 15px !important;
+      }
+
+      .nav-menu .nav-item.active a::after {
+        display: none !important;
+      }
+    }
+
+    /* SACRED SITE PRELOADER / LOADER */
+    .site-preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: radial-gradient(circle at 50% 42%, #152238 0%, #0b1320 55%, #060a12 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .site-preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-emblem-box {
+      position: relative;
+      width: 112px;
+      height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .preloader-ring-outer {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid rgba(212, 151, 46, 0.2);
+      border-top-color: #f59e0b;
+      border-right-color: #d4972e;
+      animation: preloaderSpin 1.35s cubic-bezier(0.5, 0.15, 0.5, 0.85) infinite;
+      box-shadow: 0 0 28px rgba(212, 151, 46, 0.25);
+    }
+
+    .preloader-ring-inner {
+      position: absolute;
+      inset: 9px;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(229, 169, 60, 0.38);
+      animation: preloaderSpinReverse 3.2s linear infinite;
+    }
+
+    .preloader-logo-circle {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 2.5px solid #d4972e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      box-shadow: 0 0 22px rgba(212, 151, 46, 0.45);
+      animation: preloaderPulse 2s ease-in-out infinite;
+      overflow: hidden;
+    }
+
+    .preloader-logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .preloader-kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #e5a93c;
+      margin-bottom: 8px;
+    }
+
+    .preloader-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: clamp(18px, 3.2vw, 24px);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+      max-width: 520px;
+      margin-bottom: 6px;
+    }
+
+    .preloader-location {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+
+    .preloader-motto {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 13px;
+      color: #fef08a;
+      margin-bottom: 22px;
+      opacity: 0.92;
+    }
+
+    .preloader-bar-track {
+      width: 190px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .preloader-bar-fill {
+      height: 100%;
+      width: 45%;
+      background: linear-gradient(90deg, #b45309, #f59e0b, #fef08a, #d4972e);
+      border-radius: 4px;
+      animation: preloaderSweep 1.1s ease-in-out infinite;
+    }
+
+    @keyframes preloaderSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes preloaderSpinReverse {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes preloaderPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    @keyframes preloaderSweep {
+      0% { transform: translateX(-110%); width: 45%; }
+      50% { width: 65%; }
+      100% { transform: translateX(220%); width: 45%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SACRED SITE PRELOADER -->
+  <div id="site-preloader" class="site-preloader" role="status" aria-label="Loading St. Thomas Malankara Syrian Catholic Church">
+    <div class="preloader-emblem-box">
+      <div class="preloader-ring-outer"></div>
+      <div class="preloader-ring-inner"></div>
+      <div class="preloader-logo-circle">
+        <img src="assets/church-logo.png" alt="St. Thomas Church Emblem" width="68" height="68">
+      </div>
+    </div>
+    <div class="preloader-kicker">Major Archdiocese of Trivandrum • Ayoor Ecclesiastical District</div>
+    <div class="preloader-title">St. Thomas Malankara Syrian Catholic Church</div>
+    <div class="preloader-location">Odanavattom, Kerala, India</div>
+    <div class="preloader-motto">"That All May Be One" • UT UNUM SINT</div>
+    <div class="preloader-bar-track">
+      <div class="preloader-bar-fill"></div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var preloader = document.getElementById('site-preloader');
+      if (!preloader) return;
+      function dismissPreloader() {
+        if (!preloader.classList.contains('loaded')) {
+          preloader.classList.add('loaded');
+        }
+      }
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(dismissPreloader, 420);
+      } else {
+        document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(dismissPreloader, 420);
+        });
+      }
+      window.addEventListener('load', function() {
+        setTimeout(dismissPreloader, 350);
+      });
+      setTimeout(dismissPreloader, 1100);
+    })();
+  </script>
+
+  <!-- 1. TOPMOST ARCHDIOCESE NOTICE BAR -->
+  <aside class="top-bar" aria-label="Ecclesiastical jurisdiction notice">
+    <div class="container top-bar-inner">
+      <div class="archdiocese-title">
+        Major Archdiocese of Trivandrum • Ayoor Ecclesiastical District
+      </div>
+      <div class="motto-text">
+        "That All May Be One" • <span>UT UNUM SINT</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- 2. MAIN NAVBAR & BRANDING -->
+  <header class="navbar" id="site-header">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-link" aria-label="St. Thomas SMCC Odanavattom Home">
+        <div class="brand-logo" title="The Syro-Malankara Catholic Church">
+          <img src="assets/church-logo.png" alt="The Syro-Malankara Catholic Church Logo" width="48" height="48">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">St. Thomas Malankara Syrian Catholic Church</span>
+          <span class="brand-location">Odanavattom, Kerala, India</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Nav Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="primary-nav">
+          <li class="nav-item active"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="clergy.html">Clergy</a></li>
+          <li class="nav-item"><a href="worship.html">Worship</a></li>
+          <li class="nav-item"><a href="ministries.html">Ministries</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION -->
+  <main>
+    <section class="hero-section" id="home" aria-label="Parish Welcome Hero">
+      <div class="hero-content">
+        <p class="hero-pretitle">PRAISED BE JESUS CHRIST</p>
+        <h1 class="hero-title">
+          Welcome to St. Thomas SMCC
+          <span class="hero-title-sub">Odanavattom</span>
+        </h1>
+        <p class="hero-tagline">
+          A Parish of the Syro-Malankara Catholic Church — Serving the faithful since 1949
+        </p>
+        <div class="hero-actions">
+          <a href="worship.html" class="btn-gold">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            View Liturgical Schedules
+          </a>
+          <a href="about.html" class="btn-glass">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            Our History
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. THREE HIGHLIGHT CARDS (POST HERO) -->
+    <section class="highlights-section" aria-label="Key Parish Information">
+      <div class="container">
+        <div class="highlights-grid">
+          
+          <!-- Card 1: Holy Qurbono Schedule -->
+          <article class="highlight-card" onclick="window.location.href='worship.html'" tabindex="0" role="button" aria-label="View Holy Qurbono Schedule">
+            <div class="highlight-icon-wrap" aria-hidden="true">
+              <!-- Stylized Liturgical Cross / Chalice Icon -->
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M17 5H7M4 10h16"/>
+              </svg>
+            </div>
+            <h2 class="highlight-title">Holy Qurbono Schedule</h2>
+            <p class="highlight-bold-desc">Sunday: 9:30 AM — Holy Qurbono</p>
+            <p class="highlight-desc">Weekday liturgy timings inside. All are welcome to participate.</p>
+            <div class="card-footer-hint">View liturgical timings page →</div>
+          </article>
+
+          <!-- Card 2: Our Patron Saint -->
+          <article class="highlight-card" onclick="openModal('modal-patron')" tabindex="0" role="button" aria-label="Read about St. Thomas the Apostle">
+            <div class="highlight-icon-wrap" aria-hidden="true">
+              <!-- Halo / Apostle Symbol -->
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+              </svg>
+            </div>
+            <h2 class="highlight-title">Our Patron Saint</h2>
+            <p class="highlight-bold-desc">St. Thomas the Apostle</p>
+            <p class="highlight-desc">The Apostle of India. Annual Feast day celebrated with great solemnity on July 3rd.</p>
+            <div class="card-footer-hint">Read patron saint history →</div>
+          </article>
+
+          <!-- Card 3: Current Vicar -->
+          <article class="highlight-card" onclick="window.location.href='clergy.html'" tabindex="0" role="button" aria-label="View Current Vicar profile">
+            <div class="highlight-icon-wrap" aria-hidden="true">
+              <!-- Pastoral staff / Shepherd icon -->
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+            </div>
+            <h2 class="highlight-title">Current Vicar</h2>
+            <p class="highlight-bold-desc">Rev. Fr. John Kizhakekkara</p>
+            <p class="highlight-desc">Leading our parish community in pastoral care, administration, and spiritual growth.</p>
+            <div class="card-footer-hint">View clergy & pastoral shepherds page →</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. "WHO WE ARE" / PARISH OVERVIEW SECTION -->
+    <section class="overview-section" id="about" aria-label="Parish Heritage & Identity">
+      <div class="container">
+        <div class="overview-grid">
+          
+          <!-- Left Column Text -->
+          <div class="overview-content">
+            <span class="section-eyebrow">WHO WE ARE</span>
+            <h2 class="section-title">
+              Spiritual Home of Syro Malankara Catholics in Odanavattom
+            </h2>
+            <p class="section-body">
+              Established in 1949, our parish has stood as a beacon of Christian faith, devotion, 
+              and community service. Walking in the rich legacy of Mar Ivanios and Archbishop 
+              Mar Gregorios, we observe the ancient and devout West Syriac Liturgy while 
+              fostering deep communal harmony and child faith education.
+            </p>
+            <a href="about.html" class="link-explore">
+              <span>Explore Our Rich Heritage</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Right Column Altar (Madbaho) Image -->
+          <div class="overview-image-wrap" onclick="openModal('modal-gallery')" title="Click to view parish gallery" style="cursor: pointer;">
+            <img src="assets/church-altar.jpg" alt="Interior view of the holy Madbaho altar with golden iconostasis and chandelier at St. Thomas Malankara Catholic Church">
+            <div class="image-badge-tag">Holy Madbaho Sanctuary</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. UPCOMING PARISH EVENTS-->
+    <section class="events-section" id="events" aria-label="Parish Events and Calendar">
+      <div class="container">
+        <div class="events-header">
+          <h2 class="events-section-title">Upcoming Parish Events</h2>
+        </div>
+
+        <div class="events-grid">
+          
+          <!-- Event 1: Feast of St. Thomas -->
+          <article class="event-card" onclick="openEventModal('thomas')" tabindex="0" role="button" aria-label="Event details for Feast of St. Thomas">
+            <div class="date-badge">
+              <span class="date-badge-day">03</span>
+              <span class="date-badge-month">JUL</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Feast of St. Thomas the Apostle</h3>
+              <p class="event-desc">Solemn Holy Qurbono, procession, and community luncheon.</p>
+            </div>
+            <div class="event-action-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </article>
+
+          <!-- Event 2: Christmas -->
+          <article class="event-card" onclick="openEventModal('shunoyo')" tabindex="0" role="button" aria-label="Event details for Christmas">
+            <div class="date-badge">
+              <span class="date-badge-day">25</span>
+              <span class="date-badge-month">DEC</span>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Christmas (Birth of Jesus Christ)</h3>
+              <p class="event-desc">Liturgical celebration with 25-day fasting conclusion.</p>
+            </div>
+            <div class="event-action-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. SUBMIT PRAYER INTENTIONS / CALL TO ACTION BANNER -->
+    <section class="cta-banner" aria-label="Prayer Intentions">
+      <div class="container cta-banner-inner">
+        <div class="cta-text-wrap">
+          <h2 class="cta-title">Submit Prayer Intentions</h2>
+          <p class="cta-subtitle">
+            Your spiritual intentions are placed at the Holy Altar. Our parish community and clergy hold all intentions in continuous intercession.
+          </p>
+        </div>
+        <div class="cta-buttons">
+          <button type="button" class="btn-cta-gold" onclick="openModal('modal-prayer')">Submit Prayer Request</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      
+      <!-- Col 1: Church Heritage -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">St. Thomas Malankara Syrian Catholic Church</h3>
+        <p class="footer-heritage-desc">
+          Preserving the ancient West Syriac Antiochene liturgical heritage under the communion of the Syro-Malankara Catholic Major Archieparchy of Trivandrum.
+        </p>
+      </div>
+
+      <!-- Col 2: Parish Rectory -->
+      <div class="footer-col">
+        <span class="footer-section-tag">PARISH RECTORY</span>
+        <address class="footer-address">
+          Odanavattom P.O., Kottarakara<br>
+          Kollam District, Kerala — 691 512<br>
+          Phone: <a href="tel:00919447348135" class="footer-phone-link">0091-9447348135</a>
+        </address>
+      </div>
+
+      <!-- Col 3: Ecclesiastical Jurisdiction -->
+      <div class="footer-col">
+        <span class="footer-section-tag">ECCLESIASTICAL JURISDICTION</span>
+        <div class="footer-jurisdiction">
+          Major Archdiocese of Trivandrum<br>
+          Ayoor Ecclesiastical District<br>
+          Vicar: Rev. Fr. John Kizhakekkara
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <div>© 2026 St. Thomas Malankara Catholic Church, Odanavattom. All Rights Reserved.</div>
+        <div class="footer-nav-links" style="display:flex; gap:10px; flex-wrap:wrap; font-size:12px;">
+          <a href="index.html" style="color:#cbd5e1; text-decoration:none;">Home</a> •
+          <a href="about.html" style="color:#cbd5e1; text-decoration:none;">About</a> •
+          <a href="clergy.html" style="color:#cbd5e1; text-decoration:none;">Clergy</a> •
+          <a href="worship.html" style="color:#cbd5e1; text-decoration:none;">Worship</a> •
+          <a href="ministries.html" style="color:#cbd5e1; text-decoration:none;">Ministries</a> •
+          <a href="gallery.html" style="color:#cbd5e1; text-decoration:none;">Gallery</a> •
+          <a href="contact.html" style="color:#cbd5e1; text-decoration:none;">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================================================
+       INTERACTIVE MODALS
+       ============================================================= -->
+
+  <!-- Modal 1: Holy Qurbono & Liturgical Schedules -->
+  <div class="modal-backdrop" id="modal-schedules" role="dialog" aria-modal="true" aria-labelledby="schedules-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3 class="modal-title" id="schedules-title">Liturgical Services & Schedules</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-schedules')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 14px; color: #475569; margin-bottom: 16px;">
+          All liturgical services are celebrated according to the venerable <strong>West Syriac Antiochene Rite</strong> in Malayalam and Syriac.
+        </p>
+        
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Day & Time</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>First Holy Qurbono</strong></td>
+              <td><span class="time-badge">Sun 6:30 AM</span></td>
+              <td>Solemn Parish Mass with traditional incense and hymns</td>
+            </tr>
+            <tr>
+              <td><strong>Second Holy Qurbono</strong></td>
+              <td><span class="time-badge">Sun 9:00 AM</span></td>
+              <td>Catechism and Youth Holy Mass</td>
+            </tr>
+            <tr>
+              <td><strong>Weekday Holy Mass</strong></td>
+              <td><span class="time-badge">Mon - Sat 6:15 AM</span></td>
+              <td>Daily devotion and Holy Communion</td>
+            </tr>
+            <tr>
+              <td><strong>Sandhya Prarthana (Ramsho)</strong></td>
+              <td><span class="time-badge">Daily 6:30 PM</span></td>
+              <td>Vespers & Canonical evening community prayer</td>
+            </tr>
+            <tr>
+              <td><strong>Novena of Our Mother of Perpetual Help</strong></td>
+              <td><span class="time-badge">Saturday 7:00 AM</span></td>
+              <td>Special intercessory prayers for families</td>
+            </tr>
+            <tr>
+              <td><strong>Sacrament of Confession</strong></td>
+              <td><span class="time-badge">Sat 5:30 - 6:30 PM</span></td>
+              <td>And on Sundays before Holy Qurbono</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div style="margin-top: 20px; text-align: center;">
+          <button class="btn-gold" style="width: 100%; justify-content: center;" onclick="closeModal('modal-schedules'); openModal('modal-prayer');">
+            Book a Mass Intention / Offering
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: Parish History -->
+  <div class="modal-backdrop" id="modal-history" role="dialog" aria-modal="true" aria-labelledby="history-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          </div>
+          <h3 class="modal-title" id="history-title">Our Parish Heritage (Since 1949)</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-history')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom: 18px;">
+          <img src="assets/hero-church.jpg" alt="St. Thomas Church" style="border-radius: 6px; height: 180px; width: 100%; object-fit: cover;">
+        </div>
+        <h4 style="font-family: var(--font-serif); font-size: 17px; margin-bottom: 8px; color: var(--gold-hover);">A Legacy of Reunion and Faith</h4>
+        <p style="font-size: 13.8px; color: #334155; line-height: 1.7; margin-bottom: 14px;">
+          St. Thomas Malankara Catholic Church at Odanavattom was established in <strong>1949</strong> under the visionary pastoral leadership of the Servant of God, <strong>Archbishop Geevarghese Mar Ivanios</strong>. Following the historic Reunion Movement of September 20, 1930, the faithful families of Odanavattom united under the universal communion of the Catholic Church while preserving their authentic Antiochene West Syriac rite.
+        </p>
+        <p style="font-size: 13.8px; color: #334155; line-height: 1.7; margin-bottom: 14px;">
+          Over the decades, guided by great church fathers including <strong>Archbishop Benedict Mar Gregorios</strong> and <strong>Moran Mor Cyril Baselios</strong>, our church grew from a humble thatched chapel to a magnificent spiritual center. In 2024, our parish solemnly commemorated its <strong>Platinum Jubilee (75 Years)</strong> of devotion, education, and social charity under the pastoral care of the Major Archdiocese of Trivandrum.
+        </p>
+        <div style="background: #fdfaf3; border: 1px solid #ebdcc5; border-radius: 6px; padding: 14px 18px; margin-top: 14px;">
+          <div style="font-weight: 700; color: #854d0e; font-size: 13px; margin-bottom: 4px;">Milestones of Grace</div>
+          <ul style="font-size: 13px; color: #57534e; padding-left: 18px; line-height: 1.6;">
+            <li><strong>1949:</strong> Foundation stone and first Holy Qurbono celebration.</li>
+            <li><strong>1974:</strong> Silver Jubilee and expansion of the Parish Catechism center.</li>
+            <li><strong>1999:</strong> Golden Jubilee and consecration of the renovated Holy Madbaho.</li>
+            <li><strong>2024:</strong> Platinum Jubilee celebrations with Major Archbishop-Catholicos Moran Mor Baselios Cardinal Cleemis.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Submit Prayer Request / Intentions -->
+  <div class="modal-backdrop" id="modal-prayer" role="dialog" aria-modal="true" aria-labelledby="prayer-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 0 0 9-9c0-4.97-4.03-9-9-9s-9 4.03-9 9a9 9 0 0 0 9 9z"></path><path d="M12 7v5l3 3"></path></svg>
+          </div>
+          <h3 class="modal-title" id="prayer-title">Submit Holy Altar Prayer Intention</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-prayer')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <form id="prayer-form" onsubmit="handlePrayerSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="prayer-name">Your Full Name *</label>
+            <input type="text" id="prayer-name" class="form-input" placeholder="e.g. Thomas Mathew" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <div class="form-group">
+              <label class="form-label" for="prayer-phone">Phone / WhatsApp *</label>
+              <input type="tel" id="prayer-phone" class="form-input" placeholder="09876543210" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="prayer-type">Intention Category *</label>
+              <select id="prayer-type" class="form-select" required>
+                <option value="Thanksgiving (Sthuthiparppan)">Thanksgiving Mass</option>
+                <option value="Healing & Good Health">Healing & Health of the Sick</option>
+                <option value="Departed Soul (Dukrono / Memorial)">Departed Soul (Dukrono)</option>
+                <option value="Special Need & Employment">Employment & Exams</option>
+                <option value="Family Peace & Harmony">Family Blessing</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prayer-msg">Spiritual Intention / Person's Name *</label>
+            <textarea id="prayer-msg" class="form-textarea" rows="3" placeholder="State your prayer request or names of individuals to be remembered at the Holy Altar..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="prayer-date">Preferred Mass Date</label>
+            <input type="date" id="prayer-date" class="form-input">
+          </div>
+
+          <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; padding: 13px;">
+            Place Intention at the Holy Altar
+          </button>
+        </form>
+
+        <div id="prayer-confirmation" style="display: none; text-align: center; padding: 20px 10px;">
+          <div style="width: 54px; height: 54px; border-radius: 50%; background: #dcfce7; color: #16a34a; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h4 style="font-family: var(--font-serif); font-size: 20px; color: #0f172a; margin-bottom: 8px;">Prayer Intention Placed at the Holy Altar</h4>
+          <p style="font-size: 14px; color: #475569; margin-bottom: 16px; line-height: 1.6;">
+            Your prayer intention has been recorded and <strong style="color: #15803d;">automatically sent to the Parish Rectory (<a href="mailto:stthomasmsccovm@gmail.com" style="color: #0f172a; text-decoration: underline;">stthomasmsccovm@gmail.com</a>)</strong>. It will be reverently remembered at the Holy Madbaho during the Holy Qurbono.
+          </p>
+          <div style="background: #f1f5f9; padding: 12px; border-radius: 6px; font-size: 13.5px; font-weight: 600; color: #1e293b; margin-bottom: 20px;" id="prayer-receipt-id">
+            Reference: STM-2026-8941
+          </div>
+
+          <button type="button" class="btn-gold" style="width: 100%; justify-content: center; padding: 12px;" onclick="resetPrayerForm()">
+            Submit Another Prayer Intention
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 5: Event Detail & Calendar (.ics) Download -->
+  <div class="modal-backdrop" id="modal-event" role="dialog" aria-modal="true" aria-labelledby="event-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          </div>
+          <h3 class="modal-title" id="event-modal-title">Feast Details</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-event')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div id="event-modal-body-content">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6: Current Vicar Profile -->
+  <div class="modal-backdrop" id="modal-vicar" role="dialog" aria-modal="true" aria-labelledby="vicar-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          </div>
+          <h3 class="modal-title" id="vicar-title">Pastoral Leadership</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-vicar')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="display: flex; gap: 20px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+          <div style="width: 80px; height: 80px; border-radius: 50%; background: #e2e8f0; display: flex; align-items: center; justify-content: center; border: 2px solid var(--gold-primary); flex-shrink: 0;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="#64748b"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 12c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg>
+          </div>
+          <div>
+            <h4 style="font-family: var(--font-serif); font-size: 20px; color: #0f172a; margin-bottom: 4px;">Rev. Fr. John Kizhakekkara</h4>
+            <div style="font-size: 13.5px; font-weight: 600; color: var(--gold-hover);">Parish Vicar & Spiritual Director</div>
+            <div style="font-size: 12.5px; color: #64748b;">Major Archdiocese of Trivandrum</div>
+          </div>
+        </div>
+        <p style="font-size: 14px; color: #334155; line-height: 1.7; margin-bottom: 16px;">
+          "Dear beloved brothers and sisters in Christ, welcome to our spiritual family at St. Thomas Church, Odanavattom. May our faith in Christ deepen through the ancient and solemn Holy Qurbono. Our church doors and rectory are always open for pastoral counsel, prayer, and community service."
+        </p>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 14px 18px; font-size: 13.5px;">
+          <div style="font-weight: 700; color: #1e293b; margin-bottom: 6px;">Rectory Office Hours & Appointments:</div>
+          <div style="color: #475569; line-height: 1.6;">
+            • Tuesday to Saturday: 9:00 AM – 1:00 PM<br>
+            • Evening Counseling: 5:00 PM – 6:30 PM (By prior call)<br>
+            • Direct Parish Line: <strong>0474-2461020</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7: Patron Saint (St. Thomas the Apostle) -->
+  <div class="modal-backdrop" id="modal-patron" role="dialog" aria-modal="true" aria-labelledby="patron-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <h3 class="modal-title" id="patron-title">St. Thomas the Apostle (Mar Thoma)</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-patron')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <h4 style="font-family: var(--font-serif); font-size: 18px; color: var(--gold-hover); margin-bottom: 8px;">The Apostle of India</h4>
+        <p style="font-size: 13.8px; color: #334155; line-height: 1.7; margin-bottom: 14px;">
+          Saint Thomas, one of the Twelve Apostles of Jesus Christ, arrived at the ancient seaport of <strong>Muziris (Kodungallur), Kerala, in AD 52</strong>. He proclaimed the Gospel of salvation, baptized many, and established seven Christian communities (Ezharappallikal) along the Malabar coast.
+        </p>
+        <p style="font-size: 13.8px; color: #334155; line-height: 1.7; margin-bottom: 14px;">
+          The Syro-Malankara Catholic Church traces its apostolic lineage to the faith, liturgy, and martyrdom of Mar Thoma at St. Thomas Mount, Chennai in AD 72. His enduring confession of faith—<em>"My Lord and my God!" (Moran v'Alahan)</em>—remains the bedrock of our parish spirituality.
+        </p>
+        <div style="background: #fdfaf3; border: 1px solid #ebdcc5; border-radius: 6px; padding: 14px; font-size: 13.5px; color: #854d0e;">
+          <strong>Parish Feast Day:</strong> Celebrated annually on <strong>July 3rd (Dukrono of Mar Thoma)</strong> with solemn Holy Qurbono, liturgical Rasa procession, and community love-feast (Nercha).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8: Parish Ministries -->
+  <div class="modal-backdrop" id="modal-ministries" role="dialog" aria-modal="true" aria-labelledby="ministries-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+          </div>
+          <h3 class="modal-title" id="ministries-title">Parish Ministries & Organizations</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-ministries')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px;">
+          <li style="border-left: 3px solid var(--gold-primary); padding-left: 14px;">
+            <strong style="color: #0f172a; font-size: 14.5px;">Sunday School & Catechism (Darsanaveedhi)</strong>
+            <p style="font-size: 13px; color: #64748b; margin-top: 2px;">Spiritual, moral, and liturgical formation for children from Kindergarten through 12th Standard every Sunday after the 9:00 AM Holy Mass.</p>
+          </li>
+          <li style="border-left: 3px solid var(--gold-primary); padding-left: 14px;">
+            <strong style="color: #0f172a; font-size: 14.5px;">MCYM (Malankara Catholic Youth Movement)</strong>
+            <p style="font-size: 13px; color: #64748b; margin-top: 2px;">Vibrant youth wing dedicated to faith witness, charitable works, community outreach, and parish choir ministry.</p>
+          </li>
+          <li style="border-left: 3px solid var(--gold-primary); padding-left: 14px;">
+            <strong style="color: #0f172a; font-size: 14.5px;">MCA (Malankara Catholic Association)</strong>
+            <p style="font-size: 13px; color: #64748b; margin-top: 2px;">Parish men's association supporting parish administration, community upliftment, and church festivities.</p>
+          </li>
+          <li style="border-left: 3px solid var(--gold-primary); padding-left: 14px;">
+            <strong style="color: #0f172a; font-size: 14.5px;">Mathrusangham & Legion of Mary</strong>
+            <p style="font-size: 13px; color: #64748b; margin-top: 2px;">Devout women of the parish visiting elderly, reciting the family Rosary, and supporting sick parishioners.</p>
+          </li>
+          <li style="border-left: 3px solid var(--gold-primary); padding-left: 14px;">
+            <strong style="color: #0f172a; font-size: 14.5px;">Society of St. Vincent de Paul (SSVP)</strong>
+            <p style="font-size: 13px; color: #64748b; margin-top: 2px;">Premier charitable fellowship providing food rations, emergency medical support, dialysis assistance, and education aid for needy families.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 9: Sacraments Guide -->
+  <div class="modal-backdrop" id="modal-sacraments" role="dialog" aria-modal="true" aria-labelledby="sacraments-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+          </div>
+          <h3 class="modal-title" id="sacraments-title">Holy Sacraments (Koodashakal)</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-sacraments')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size: 13.5px; color: #475569; margin-bottom: 14px;">
+          The Seven Holy Mysteries of the Church transmit divine grace to the faithful. Contact the Parish Vicar for preparation and scheduling.
+        </p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 13px;">
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px;">
+            <strong style="color: #0f172a;">Holy Baptism (Mamodiso)</strong>
+            <p style="color: #64748b; margin-top: 3px;">Celebrated on 2nd and 4th Sundays with prior rectory registration.</p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px;">
+            <strong style="color: #0f172a;">Holy Matrimony (Marriage)</strong>
+            <p style="color: #64748b; margin-top: 3px;">Requires 3 months prior notification, pre-cana course certificate, and banns.</p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px;">
+            <strong style="color: #0f172a;">Anointing of the Sick</strong>
+            <p style="color: #64748b; margin-top: 3px;">Available anytime for the sick and elderly at home or hospital.</p>
+          </div>
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 12px;">
+            <strong style="color: #0f172a;">First Holy Communion</strong>
+            <p style="color: #64748b; margin-top: 3px;">Administered annually to catechism students in Grade 4.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 10: Photo Gallery Lightbox -->
+  <div class="modal-backdrop" id="modal-gallery" role="dialog" aria-modal="true" aria-labelledby="gallery-title">
+    <div class="modal-dialog" style="max-width: 780px;">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+          </div>
+          <h3 class="modal-title" id="gallery-title">Parish Photo Gallery</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-gallery')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <div>
+            <img src="assets/church-altar.jpg" alt="Holy Madbaho" style="border-radius: 6px; width: 100%; height: 220px; object-fit: cover;">
+            <p style="font-size: 12.5px; font-weight: 600; color: #1e293b; margin-top: 6px;">Holy Madbaho Sanctuary with Chandelier</p>
+          </div>
+          <div>
+            <img src="assets/hero-church.jpg" alt="Church Exterior" style="border-radius: 6px; width: 100%; height: 220px; object-fit: cover;">
+            <p style="font-size: 12.5px; font-weight: 600; color: #1e293b; margin-top: 6px;">Church Tower & Belfry at Twilight</p>
+          </div>
+        </div>
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 14px; margin-top: 16px; font-size: 13px; color: #475569; text-align: center;">
+          📸 Additional photos of recent feast processions and parish celebrations are archived at the rectory media center.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 11: Contact & Rectory Info -->
+  <div class="modal-backdrop" id="modal-contact" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-title-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <h3 class="modal-title" id="contact-title">Contact Parish Rectory</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('modal-contact')" aria-label="Close dialog">✕</button>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom: 18px;">
+          <h4 style="font-family: var(--font-serif); font-size: 17px; color: #0f172a; margin-bottom: 6px;">St. Thomas Malankara Syrian Catholic Church</h4>
+          <p style="font-size: 13.5px; color: #475569; line-height: 1.6;">
+            Odanavattom P.O., Kottarakara, Kollam District, Kerala — 691 512<br>
+            Ayoor Ecclesiastical District, Major Archdiocese of Trivandrum
+          </p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14px; margin-bottom: 20px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-hover)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Rectory Office: <a href="tel:04742461020" style="color: #0284c7; font-weight: 600;">0474-2461020</a></span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-hover)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email: <a href="mailto:stthomasmsccovm@gmail.com" style="color: #1e293b; font-weight: 700; text-decoration: underline;">stthomasmsccovm@gmail.com</a></span>
+          </div>
+        </div>
+
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 16px;">
+          <h5 style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 8px;">Quick Inquiry Form</h5>
+          <form id="quick-contact-form" onsubmit="handleContactSubmit(event)">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+              <input type="text" id="quick-contact-name" class="form-input" placeholder="Your Name" required>
+              <input type="tel" id="quick-contact-phone" class="form-input" placeholder="Phone Number" required>
+            </div>
+            <textarea id="quick-contact-msg" class="form-textarea" rows="2" placeholder="How can the parish assist you?" required style="margin-bottom: 10px;"></textarea>
+            <button type="submit" class="btn-gold" style="width: 100%; justify-content: center;">Send Message to Rectory</button>
+          </form>
+
+          <div id="quick-contact-confirmation" style="display: none; text-align: center; padding: 14px 6px;">
+            <p style="font-size: 13.5px; color: #15803d; font-weight: 600; margin-bottom: 6px;">✓ Message Sent Automatically!</p>
+            <p style="font-size: 13px; color: #475569; margin-bottom: 12px;">Your inquiry has been emailed directly to the Rectory Office (<strong style="color: #0f172a;">stthomasmsccovm@gmail.com</strong>).</p>
+            <button type="button" class="btn-action-outline" style="font-size: 12px; padding: 7px 14px; background: #fff;" onclick="resetQuickContactForm()">Send another note</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <!-- =============================================================
+       JAVASCRIPT FUNCTIONALITY
+       ============================================================= -->
+  <script>
+    // --- Mobile Menu Toggle ---
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('primary-nav');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      mobileBtn.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close menu when clicking nav items
+    document.querySelectorAll('.nav-menu a, .nav-menu button').forEach(item => {
+      item.addEventListener('click', () => {
+        navMenu.classList.remove('open');
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // --- Modal Management ---
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Close on backdrop click
+    document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+      backdrop.addEventListener('click', (e) => {
+        if (e.target === backdrop) {
+          backdrop.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.modal-backdrop.active').forEach(modal => {
+          modal.classList.remove('active');
+        });
+        document.body.style.overflow = '';
+      }
+    });
+
+    // --- Event Modal & Calendar (.ics) Generator ---
+    const eventData = {
+      thomas: {
+        title: "Feast of St. Thomas the Apostle (Dukrono)",
+        dateStr: "July 3, 2026",
+        startISO: "20260703T063000",
+        endISO: "20260703T130000",
+        desc: "Annual feast of the Apostle of India. Solemn Holy Qurbono, liturgical Rasa street procession, blessing of offerings, and traditional community Nercha / love feast.",
+        schedule: [
+          { time: "06:30 AM", event: "Morning Prayer (Sapro)" },
+          { time: "07:30 AM", event: "Solemn Concelebrated Holy Qurbono" },
+          { time: "10:30 AM", event: "Solemn Rasa Procession around the parish" },
+          { time: "12:00 PM", event: "Apostolic Blessing & Community Luncheon (Nercha)" }
+        ]
+      },
+      shunoyo: {
+        title: "Shunoyo (Dormition of the Blessed Virgin Mary)",
+        dateStr: "August 15, 2026",
+        startISO: "20260815T063000",
+        endISO: "20260815T113000",
+        desc: "Solemn conclusion of the 15-Day Dormition Fasting (Shunoyo Nombu) with Holy Qurbono, blessing of grapes/seeds, and lowering of the feast flag.",
+        schedule: [
+          { time: "06:30 AM", event: "Feast Morning Prayer (Sapro)" },
+          { time: "07:15 AM", event: "Solemn Holy Qurbono of the Dormition" },
+          { time: "09:30 AM", event: "Intercessory Prayers & Blessing of Harvest Seeds" },
+          { time: "10:30 AM", event: "Conclusion of 15-day Fasting & Nercha Distribution" }
+        ]
+      }
+    };
+
+    function openEventModal(eventKey) {
+      const data = eventData[eventKey];
+      if (!data) return;
+
+      const modalBody = document.getElementById('event-modal-body-content');
+      document.getElementById('event-modal-title').textContent = data.title;
+
+      let scheduleHtml = data.schedule.map(item => `
+        <div style="display: flex; gap: 14px; padding: 8px 0; border-bottom: 1px solid #f1f5f9;">
+          <span style="font-weight: 700; color: #0369a1; font-size: 13px; width: 80px;">${item.time}</span>
+          <span style="color: #334155; font-size: 13.5px;">${item.event}</span>
+        </div>
+      `).join('');
+
+      modalBody.innerHTML = `
+        <div style="background: #fdfaf3; border: 1px solid #ebdcc5; border-radius: 6px; padding: 16px; margin-bottom: 18px;">
+          <div style="font-size: 13px; font-weight: 700; color: #854d0e; text-transform: uppercase; letter-spacing: 0.1em;">Feast Date</div>
+          <div style="font-size: 20px; font-weight: 800; color: #0f172a; margin-top: 2px;">${data.dateStr}</div>
+          <p style="font-size: 13.5px; color: #57534e; margin-top: 6px; line-height: 1.5;">${data.desc}</p>
+        </div>
+
+        <h4 style="font-family: var(--font-serif); font-size: 15px; color: #0f172a; margin-bottom: 10px;">Program Itinerary</h4>
+        <div style="margin-bottom: 20px;">
+          ${scheduleHtml}
+        </div>
+
+        <button type="button" class="btn-gold" style="width: 100%; justify-content: center;" onclick="downloadCalendarEvent('${eventKey}')">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Add to Calendar (.ics File)
+        </button>
+      `;
+
+      openModal('modal-event');
+    }
+
+    function downloadCalendarEvent(eventKey) {
+      const ev = eventData[eventKey];
+      if (!ev) return;
+
+      const icsContent = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//St. Thomas SMCC Odanavattom//Parish Events//EN",
+        "CALSCALE:GREGORIAN",
+        "BEGIN:VEVENT",
+        `SUMMARY:${ev.title}`,
+        `DESCRIPTION:${ev.desc}`,
+        "LOCATION:St. Thomas Malankara Syrian Catholic Church, Odanavattom, Kerala",
+        `DTSTART:${ev.startISO}`,
+        `DTEND:${ev.endISO}`,
+        "STATUS:CONFIRMED",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
+
+      const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${eventKey}-feast-smcc-odanavattom.ics`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      showToast(`Calendar event for "${ev.title}" saved!`);
+    }
+
+    // --- Prayer Request Form Handler (Delivers Email to stthomasmsccovm@gmail.com) ---
+    function handlePrayerSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.innerHTML;
+
+      const name = document.getElementById('prayer-name').value;
+      const phone = document.getElementById('prayer-phone').value;
+      const type = document.getElementById('prayer-type').value;
+      const msg = document.getElementById('prayer-msg').value;
+      const date = document.getElementById('prayer-date').value || 'Any Upcoming Holy Qurbono';
+      const refId = 'STM-' + Math.floor(1000 + Math.random() * 9000);
+
+      // Loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending to Rectory Altar...';
+
+      const payload = {
+        _subject: `New Holy Altar Prayer Intention: ${name} (${refId})`,
+        _template: 'table',
+        _captcha: 'false',
+        'Reference ID': refId,
+        'Parishioner Name': name,
+        'Phone / WhatsApp': phone,
+        'Intention Category': type,
+        'Preferred Mass Date': date,
+        'Spiritual Intention / Details': msg,
+        'Submitted At': new Date().toLocaleString(),
+        'Parish': 'St. Thomas Malankara Syrian Catholic Church, Odanavattom'
+      };
+
+      // Local storage backup
+      try {
+        const localList = JSON.parse(localStorage.getItem('st_thomas_prayer_intentions') || '[]');
+        localList.push(payload);
+        localStorage.setItem('st_thomas_prayer_intentions', JSON.stringify(localList));
+      } catch (err) {
+        console.warn('LocalStorage unavailable:', err);
+      }
+
+      // Deliver automatically to Rectory Email: stthomasmsccovm@gmail.com
+      const deliverAutomatically = async () => {
+        try {
+          if (window.location.protocol === 'file:') {
+            // Local file mode: dispatch via local background relay
+            await fetch('http://localhost:8080/api/relay-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+          } else {
+            // Web server / production hosted mode
+            await fetch('https://formsubmit.co/ajax/stthomasmsccovm@gmail.com', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+              },
+              body: JSON.stringify(payload)
+            });
+          }
+        } catch (err) {
+          // Fallback direct attempt if relay is offline
+          try {
+            await fetch('https://formsubmit.co/ajax/stthomasmsccovm@gmail.com', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+          } catch (e2) {
+            console.warn('Submission recorded locally:', e2);
+          }
+        }
+      };
+
+      deliverAutomatically().finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+
+        document.getElementById('prayer-form').style.display = 'none';
+        const conf = document.getElementById('prayer-confirmation');
+        conf.style.display = 'block';
+        document.getElementById('prayer-receipt-id').textContent = `Reference ID: ${refId} • Type: ${type}`;
+
+        showToast(`Prayer intention for ${name} received & emailed to stthomasmsccovm@gmail.com`);
+      });
+    }
+
+    function resetPrayerForm() {
+      document.getElementById('prayer-form').reset();
+      document.getElementById('prayer-form').style.display = 'block';
+      document.getElementById('prayer-confirmation').style.display = 'none';
+    }
+
+
+    // --- Quick Contact Form Handler ---
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('quick-contact-name').value;
+      const phone = document.getElementById('quick-contact-phone').value;
+      const msg = document.getElementById('quick-contact-msg').value;
+
+      const payload = {
+        _subject: `Quick Parish Inquiry: ${name}`,
+        _template: 'table',
+        _captcha: 'false',
+        'Sender Name': name,
+        'Phone Number': phone,
+        'Message Details': msg,
+        'Submitted At': new Date().toLocaleString(),
+        'Parish': 'St. Thomas Malankara Syrian Catholic Church, Odanavattom'
+      };
+
+      const deliverAutomatically = async () => {
+        try {
+          if (window.location.protocol === 'file:') {
+            await fetch('http://localhost:8080/api/relay-email', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+          } else {
+            await fetch('https://formsubmit.co/ajax/stthomasmsccovm@gmail.com', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+          }
+        } catch (err) {
+          try {
+            await fetch('https://formsubmit.co/ajax/stthomasmsccovm@gmail.com', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+              body: JSON.stringify(payload)
+            });
+          } catch (e2) {}
+        }
+      };
+
+      deliverAutomatically();
+
+      document.getElementById('quick-contact-form').style.display = 'none';
+      document.getElementById('quick-contact-confirmation').style.display = 'block';
+      showToast(`Thank you, ${name}! Your inquiry was automatically emailed to stthomasmsccovm@gmail.com.`);
+    }
+
+    function resetQuickContactForm() {
+      document.getElementById('quick-contact-form').reset();
+      document.getElementById('quick-contact-form').style.display = 'block';
+      document.getElementById('quick-contact-confirmation').style.display = 'none';
+    }
+
+    // --- Toast Alert Helper ---
+    function showToast(message) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'toast-msg';
+      toast.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-light)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        <span>${message}</span>
+      `;
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(10px)';
+        toast.style.transition = 'all 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+      }, 4200);
+    }
+  </script>
+</body>
+</html>

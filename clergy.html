@@ -1,0 +1,1289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clergy & Spiritual Shepherds | St. Thomas Malankara Syrian Catholic Church, Odanavattom</title>
+  <meta name="description" content="Meet our spiritual shepherds, parish vicar, and former guides at St. Thomas Malankara Syrian Catholic Church, Odanavattom.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark-top: #080e18;
+      --bg-nav: #0b1320;
+      --bg-light-warm: #f8f6f0;
+      --bg-white: #ffffff;
+      --bg-footer: #0b111c;
+      --bg-footer-sub: #070b13;
+
+      --gold-primary: #d4972e;
+      --gold-light: #e5a93c;
+      --gold-accent: #c5a059;
+      --gold-hover: #b88022;
+      --gold-year: #a16207;
+
+      --text-dark: #0f172a;
+      --text-dark-muted: #475569;
+      --text-gray: #64748b;
+      --text-light: #ffffff;
+      --text-light-muted: #94a3b8;
+
+      --border-light: #e7e2d6;
+      --border-dark: rgba(255, 255, 255, 0.12);
+
+      --font-serif: 'Cinzel', Georgia, serif;
+      --font-serif-body: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+      --container-max: 1180px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    button {
+      cursor: pointer;
+      font-family: inherit;
+      border: none;
+      outline: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* TOP NOTICE BAR */
+    .top-bar {
+      background-color: var(--bg-dark-top);
+      border-bottom: 1px solid rgba(212, 151, 46, 0.18);
+      font-size: 11px;
+      color: #cbd5e1;
+      padding: 7px 0;
+      letter-spacing: 0.08em;
+      position: relative;
+      z-index: 50;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .archdiocese-title {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--gold-accent);
+      font-size: 10.5px;
+    }
+
+    .motto-text {
+      font-family: var(--font-serif-body);
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
+    }
+
+    .motto-text span {
+      font-style: normal;
+      color: var(--gold-accent);
+      font-weight: 700;
+      font-family: var(--font-sans);
+      font-size: 10.5px;
+      letter-spacing: 0.1em;
+      margin-left: 4px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: var(--bg-nav);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      border-bottom: 1px solid var(--border-dark);
+      transition: var(--transition);
+    }
+
+    .navbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      background: #ffffff;
+      border: 2px solid var(--gold-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 14px rgba(212, 151, 46, 0.35);
+      transition: transform 0.3s ease;
+      overflow: hidden;
+      padding: 1px;
+    }
+
+    .brand-link:hover .brand-logo {
+      transform: scale(1.06);
+    }
+
+    .brand-logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-light);
+      letter-spacing: 0.03em;
+      line-height: 1.25;
+    }
+
+    .brand-location {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-top: 3px;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-item a,
+    .nav-item button {
+      background: none;
+      border: none;
+      color: #e2e8f0;
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 6px 0;
+      position: relative;
+      transition: color 0.2s ease;
+      display: inline-block;
+    }
+
+    .nav-item a:hover,
+    .nav-item button:hover {
+      color: var(--gold-light);
+    }
+
+    /* Active indicator for Clergy */
+    .nav-item.active a {
+      color: #38bdf8;
+      font-weight: 600;
+    }
+
+    .nav-item.active a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #38bdf8;
+      border-radius: 2px;
+      box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-toggle span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ffffff;
+      border-radius: 2px;
+    }
+
+    /* PAGE BANNER */
+    .clergy-hero {
+      background-color: #0b1320;
+      background-image: 
+        linear-gradient(180deg, rgba(11, 19, 32, 0.82) 0%, rgba(11, 19, 32, 0.95) 100%),
+        url('assets/hero-church.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      padding: 75px 24px 70px;
+      text-align: center;
+      color: var(--text-light);
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .clergy-hero-kicker {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .clergy-hero-title {
+      font-family: var(--font-serif);
+      font-size: 42px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.02em;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+    }
+
+    /* SECTION 1: VICAR WELCOME */
+    .vicar-welcome-section {
+      background-color: var(--bg-white);
+      padding: 75px 0;
+    }
+
+    .vicar-grid {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .vicar-photo-wrap {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 16px 36px rgba(15, 23, 42, 0.16);
+      border: 3px solid #ebdcc5;
+      background: #f8fafc;
+    }
+
+    .vicar-photo-wrap img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .vicar-content {
+      padding-right: 15px;
+    }
+
+    .vicar-kicker {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--gold-primary);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .vicar-name {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 18px;
+    }
+
+    .vicar-quote {
+      font-family: var(--font-serif-body);
+      font-style: italic;
+      font-size: 15.5px;
+      color: #1e293b;
+      line-height: 1.75;
+      margin-bottom: 20px;
+      border-left: 3px solid var(--gold-primary);
+      padding-left: 18px;
+    }
+
+    .vicar-bio {
+      font-size: 14.5px;
+      color: var(--text-dark-muted);
+      line-height: 1.75;
+    }
+
+    .section-header-center {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 48px;
+    }
+
+    .section-header-title {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .section-header-sub {
+      font-size: 14px;
+      color: var(--text-gray);
+    }
+
+    /* SECTION 2: FORMER SPIRITUAL GUIDES */
+    .former-vicars-section {
+      background-color: var(--bg-white);
+      padding: 70px 0;
+    }
+
+    .guides-list {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .guide-item {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 24px;
+      align-items: flex-start;
+      padding-bottom: 20px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+
+    .guide-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .guide-year {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--gold-year);
+      font-family: var(--font-sans);
+      letter-spacing: -0.01em;
+    }
+
+    .guide-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+
+    .guide-desc {
+      font-size: 13.5px;
+      color: var(--text-dark-muted);
+      line-height: 1.6;
+    }
+
+    /* SECTION 4: PARISH ADMINISTRATION & COUNCIL */
+    .council-section {
+      background-color: var(--bg-light-warm);
+      padding: 70px 0 80px;
+      border-top: 1px solid var(--border-light);
+    }
+
+    .council-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .council-card {
+      background-color: var(--bg-white);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 26px 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .council-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+      border-color: var(--gold-primary);
+    }
+
+    .council-avatar-wrap {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      border: 2px solid var(--gold-primary);
+      padding: 3px;
+      background: #fdfaf3;
+      box-shadow: 0 3px 10px rgba(212, 151, 46, 0.16);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+
+    .council-card:hover .council-avatar-wrap {
+      transform: scale(1.05);
+      box-shadow: 0 5px 18px rgba(212, 151, 46, 0.28);
+    }
+
+    .council-photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .council-role-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-primary);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .council-person-name {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .council-desc {
+      font-size: 13px;
+      color: var(--text-gray);
+      line-height: 1.55;
+    }
+
+    /* FOOTER */
+    .site-footer {
+      background-color: var(--bg-footer);
+      color: #94a3b8;
+      padding: 55px 0 0;
+      font-size: 13.5px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 45px;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-serif);
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .footer-section-tag {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      display: block;
+    }
+
+    .footer-heritage-desc, .footer-address, .footer-jurisdiction {
+      font-size: 13px;
+      line-height: 1.75;
+      color: #cbd5e1;
+    }
+
+    .footer-phone-link {
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: var(--gold-primary);
+      text-underline-offset: 3px;
+    }
+
+    .footer-bottom {
+      background-color: var(--bg-footer-sub);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 18px 0;
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .vicar-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        text-align: center;
+      }
+      .vicar-photo-wrap {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .vicar-content {
+        padding-right: 0;
+      }
+      .vicar-quote {
+        border-left: none;
+        padding-left: 0;
+        border-top: 2px solid var(--gold-primary);
+        padding-top: 12px;
+      }
+      .council-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .mobile-toggle {
+        display: flex;
+      }
+      .nav-menu {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background-color: #0b1320;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 30px 30px;
+        gap: 18px;
+        border-bottom: 2px solid var(--gold-primary);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+        display: none;
+      }
+      .nav-menu.open {
+        display: flex;
+      }
+      .top-bar-inner {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .council-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ENHANCED MOBILE NAVIGATION TOUCH TARGETS */
+    .mobile-toggle {
+      min-width: 48px;
+      min-height: 48px;
+      width: 48px;
+      height: 48px;
+      padding: 13px 11px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(212, 151, 46, 0.4);
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: rgba(212, 151, 46, 0.25);
+      transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .mobile-toggle:hover,
+    .mobile-toggle:active {
+      background: rgba(212, 151, 46, 0.18);
+      border-color: var(--gold-primary);
+    }
+
+    .mobile-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background-color: #ffffff;
+      border-radius: 2px;
+      pointer-events: none;
+    }
+
+    @media (max-width: 820px) {
+      .navbar-inner {
+        padding: 10px 0;
+        min-height: 68px;
+      }
+
+      .brand-link {
+        min-height: 48px;
+        padding: 4px 8px 4px 0;
+      }
+
+      .mobile-toggle {
+        display: flex !important;
+      }
+
+      .nav-menu {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        background-color: #0b1320 !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 14px 18px 22px !important;
+        gap: 6px !important;
+        border-bottom: 2px solid var(--gold-primary) !important;
+        box-shadow: 0 18px 35px rgba(0, 0, 0, 0.65) !important;
+        z-index: 999 !important;
+      }
+
+      .nav-menu .nav-item {
+        width: 100% !important;
+        margin: 0 !important;
+      }
+
+      .nav-menu .nav-item a,
+      .nav-menu .nav-item button {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        min-height: 50px !important;
+        padding: 14px 18px !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        color: #f1f5f9 !important;
+        border-radius: 10px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+        touch-action: manipulation !important;
+        -webkit-tap-highlight-color: rgba(212, 151, 46, 0.25) !important;
+      }
+
+      .nav-menu .nav-item a:hover,
+      .nav-menu .nav-item a:active {
+        background: rgba(212, 151, 46, 0.16) !important;
+        color: var(--gold-light) !important;
+      }
+
+      .nav-menu .nav-item.active a {
+        background: rgba(56, 189, 248, 0.14) !important;
+        color: #38bdf8 !important;
+        border-left: 4px solid #38bdf8 !important;
+        padding-left: 15px !important;
+      }
+
+      .nav-menu .nav-item.active a::after {
+        display: none !important;
+      }
+    }
+
+    /* SACRED SITE PRELOADER / LOADER */
+    .site-preloader {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      background: radial-gradient(circle at 50% 42%, #152238 0%, #0b1320 55%, #060a12 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .site-preloader.loaded {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .preloader-emblem-box {
+      position: relative;
+      width: 112px;
+      height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .preloader-ring-outer {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      border: 2px solid rgba(212, 151, 46, 0.2);
+      border-top-color: #f59e0b;
+      border-right-color: #d4972e;
+      animation: preloaderSpin 1.35s cubic-bezier(0.5, 0.15, 0.5, 0.85) infinite;
+      box-shadow: 0 0 28px rgba(212, 151, 46, 0.25);
+    }
+
+    .preloader-ring-inner {
+      position: absolute;
+      inset: 9px;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(229, 169, 60, 0.38);
+      animation: preloaderSpinReverse 3.2s linear infinite;
+    }
+
+    .preloader-logo-circle {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 2.5px solid #d4972e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      box-shadow: 0 0 22px rgba(212, 151, 46, 0.45);
+      animation: preloaderPulse 2s ease-in-out infinite;
+      overflow: hidden;
+    }
+
+    .preloader-logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    .preloader-kicker {
+      font-family: 'Inter', sans-serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #e5a93c;
+      margin-bottom: 8px;
+    }
+
+    .preloader-title {
+      font-family: 'Cinzel', Georgia, serif;
+      font-size: clamp(18px, 3.2vw, 24px);
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+      max-width: 520px;
+      margin-bottom: 6px;
+    }
+
+    .preloader-location {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+
+    .preloader-motto {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-size: 13px;
+      color: #fef08a;
+      margin-bottom: 22px;
+      opacity: 0.92;
+    }
+
+    .preloader-bar-track {
+      width: 190px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .preloader-bar-fill {
+      height: 100%;
+      width: 45%;
+      background: linear-gradient(90deg, #b45309, #f59e0b, #fef08a, #d4972e);
+      border-radius: 4px;
+      animation: preloaderSweep 1.1s ease-in-out infinite;
+    }
+
+    @keyframes preloaderSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    @keyframes preloaderSpinReverse {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes preloaderPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    @keyframes preloaderSweep {
+      0% { transform: translateX(-110%); width: 45%; }
+      50% { width: 65%; }
+      100% { transform: translateX(220%); width: 45%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SACRED SITE PRELOADER -->
+  <div id="site-preloader" class="site-preloader" role="status" aria-label="Loading St. Thomas Malankara Syrian Catholic Church">
+    <div class="preloader-emblem-box">
+      <div class="preloader-ring-outer"></div>
+      <div class="preloader-ring-inner"></div>
+      <div class="preloader-logo-circle">
+        <img src="assets/church-logo.png" alt="St. Thomas Church Emblem" width="68" height="68">
+      </div>
+    </div>
+    <div class="preloader-kicker">Major Archdiocese of Trivandrum • Ayoor Ecclesiastical District</div>
+    <div class="preloader-title">St. Thomas Malankara Syrian Catholic Church</div>
+    <div class="preloader-location">Odanavattom, Kerala, India</div>
+    <div class="preloader-motto">"That All May Be One" • UT UNUM SINT</div>
+    <div class="preloader-bar-track">
+      <div class="preloader-bar-fill"></div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      var preloader = document.getElementById('site-preloader');
+      if (!preloader) return;
+      function dismissPreloader() {
+        if (!preloader.classList.contains('loaded')) {
+          preloader.classList.add('loaded');
+        }
+      }
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(dismissPreloader, 420);
+      } else {
+        document.addEventListener('DOMContentLoaded', function() {
+          setTimeout(dismissPreloader, 420);
+        });
+      }
+      window.addEventListener('load', function() {
+        setTimeout(dismissPreloader, 350);
+      });
+      setTimeout(dismissPreloader, 1100);
+    })();
+  </script>
+
+  <!-- TOP NOTICE BAR -->
+  <aside class="top-bar" aria-label="Ecclesiastical jurisdiction notice">
+    <div class="container top-bar-inner">
+      <div class="archdiocese-title">
+        Major Archdiocese of Trivandrum • Ayoor Ecclesiastical District
+      </div>
+      <div class="motto-text">
+        "That All May Be One" • <span>UT UNUM SINT</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-link" aria-label="St. Thomas SMCC Odanavattom Home">
+        <div class="brand-logo" title="The Syro-Malankara Catholic Church">
+          <img src="assets/church-logo.png" alt="The Syro-Malankara Catholic Church Logo" width="48" height="48">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">St. Thomas Malankara Syrian Catholic Church</span>
+          <span class="brand-location">Odanavattom, Kerala, India</span>
+        </div>
+      </a>
+
+      <!-- Navigation Menu -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu" id="primary-nav">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item active"><a href="clergy.html">Clergy</a></li>
+          <li class="nav-item"><a href="worship.html">Worship</a></li>
+          <li class="nav-item"><a href="ministries.html">Ministries</a></li>
+          <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- PAGE HERO BANNER -->
+  <main>
+    <section class="clergy-hero" aria-label="Clergy Page Banner">
+      <div class="container">
+        <span class="clergy-hero-kicker">SPIRITUAL LEADERS</span>
+        <h1 class="clergy-hero-title">Our Spiritual Shepherds</h1>
+      </div>
+    </section>
+
+    <!-- SECTION 1: VICAR'S WELCOME MESSAGE -->
+    <section class="vicar-welcome-section" aria-label="Vicar Welcome and Pastoral Profile">
+      <div class="container">
+        <div class="vicar-grid">
+          <div class="vicar-photo-wrap">
+            <img src="assets/vicar-portrait.jpg" alt="Rev. Fr. John Kizhakekkara, Parish Vicar of St. Thomas SMCC Odanavattom">
+          </div>
+          <div class="vicar-content">
+            <span class="vicar-kicker">VICAR'S WELCOME MESSAGE</span>
+            <h2 class="vicar-name">Rev. Fr. John Kizhakekkara</h2>
+            <p class="vicar-quote">
+              "Blessings and peace to you in the name of our Lord Jesus Christ. St. Thomas Parish, Odanavattom, stands as a community of love, traditional Syrian spirituality, and active Christian witness. We welcome you to join us in liturgy and fellowship."
+            </p>
+            <p class="vicar-bio">
+              Rev. Fr. John Kizhakekkara has been serving as the spiritual father of the Odanavattom community, administering the Holy Sacraments, leading the parish council, and ensuring faith formation for the youth and catechism kids.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 2: OUR FORMER SPIRITUAL GUIDES -->
+    <section class="former-vicars-section" aria-label="Chronological Past Parish Vicars">
+      <div class="container">
+        <div class="section-header-center">
+          <h2 class="section-header-title">Our Former Spiritual Guides</h2>
+          <p class="section-header-sub">In gratitude to the noble shepherds who guided our parish through the years</p>
+        </div>
+
+        <div class="guides-list">
+          <div class="guide-item">
+            <div class="guide-year">1960</div>
+            <div>
+              <h3 class="guide-name">Fr. Koshy Attuvarathu</h3>
+              <p class="guide-desc">First vicar following parish establishment</p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-year">1972</div>
+            <div>
+              <h3 class="guide-name">Fr. Louise Philipose</h3>
+              <p class="guide-desc">Fostered major youth movements and local catechesis</p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-year">1988</div>
+            <div>
+              <h3 class="guide-name">Fr. Daniel Kochuvila</h3>
+              <p class="guide-desc">Pioneered village family prayer groups and local outreach</p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-year">2010</div>
+            <div>
+              <h3 class="guide-name">Fr. Alex Kalappila</h3>
+              <p class="guide-desc">Spearheaded the rebuilding of the grand parish church edifice</p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-year">2015</div>
+            <div>
+              <h3 class="guide-name">Fr. James Vengattoor</h3>
+              <p class="guide-desc">Empowered major community welfare and education trusts</p>
+            </div>
+          </div>
+
+          <div class="guide-item">
+            <div class="guide-year">2020</div>
+            <div>
+              <h3 class="guide-name">Fr. Samuel Thoppil</h3>
+              <p class="guide-desc">Steered the parish safely during recent technological transitions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PARISH ADMINISTRATION & COUNCIL -->
+    <section class="council-section" aria-label="Parish Council and Lay Leadership">
+      <div class="container">
+        <div class="section-header-center">
+          <h2 class="section-header-title">Parish Administration & Council</h2>
+          <p class="section-header-sub">The lay leadership working hand-in-hand with the Vicar</p>
+        </div>
+
+        <div class="council-grid">
+          <!-- Slot 1: Parish Trustee -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/trustee.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Adv. Thomas Kurian - Parish Trustee" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">PARISH TRUSTEE (KAIKKARAN)</span>
+            <h3 class="council-person-name">Adv. Thomas Kurian</h3>
+            <p class="council-desc">Managing financial administration, parish properties, and budget oversight.</p>
+          </div>
+
+          <!-- Slot 2: Parish Secretary -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/secretary.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Prof. Sunny Jacob - Parish Secretary" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">PARISH SECRETARY</span>
+            <h3 class="council-person-name">Prof. Sunny Jacob</h3>
+            <p class="council-desc">Coordinating parish council proceedings, official communications, records, and general assembly affairs.</p>
+          </div>
+
+          <!-- Slot 3: Joint Trustee -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/joint-trustee.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. George Mathew - Joint Trustee" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">JOINT TRUSTEE</span>
+            <h3 class="council-person-name">Sri. George Mathew</h3>
+            <p class="council-desc">Assisting the Trustee in accounts, property maintenance, and project coordination.</p>
+          </div>
+
+          <!-- Slot 4: Joint Secretary -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/joint-secretary.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Mathew Philip - Joint Secretary" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">JOINT SECRETARY</span>
+            <h3 class="council-person-name">Sri. Mathew Philip</h3>
+            <p class="council-desc">Assisting the Secretary in minute-keeping, documentation, and parish registry management.</p>
+          </div>
+
+          <!-- Slot 5: Sunday School Headmaster -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/headmaster.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Varghese Daniel - Sunday School Headmaster" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">SUNDAY SCHOOL HEADMASTER</span>
+            <h3 class="council-person-name">Sri. Varghese Daniel</h3>
+            <p class="council-desc">Directing the catechism curriculum, teacher coordination, and children's faith formation.</p>
+          </div>
+
+          <!-- Slot 6: MCYM President -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/mcym-president.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Kevin Varghese - MCYM President" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">MCYM PRESIDENT (YOUTH)</span>
+            <h3 class="council-person-name">Sri. Kevin Varghese</h3>
+            <p class="council-desc">Leading the Malankara Catholic Youth Movement in youth ministry, social outreach, and spiritual activities.</p>
+          </div>
+
+          <!-- Slot 7: MCA President -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/mca-president.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Joseph Thomas - MCA President" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">MCA PRESIDENT (LAY ASSOCIATION)</span>
+            <h3 class="council-person-name">Sri. Joseph Thomas</h3>
+            <p class="council-desc">Organizing Malankara Catholic Association initiatives, men's spiritual fellowship, and community service.</p>
+          </div>
+
+          <!-- Slot 8: Mathrusangham President -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/mathrusangham-president.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Smt. Mariamma Varghese - Mathrusangham President" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">MATHRUSANGHAM PRESIDENT</span>
+            <h3 class="council-person-name">Smt. Mariamma Varghese</h3>
+            <p class="council-desc">Coordinating the Women's Apostolate, charitable works, prayer chains, and church festival fellowship.</p>
+          </div>
+
+          <!-- Slot 9: Choir Director & Liturgical Music -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/choir-director.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Alex K. John - Choir Director" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">CHOIR DIRECTOR & LITURGICAL MUSIC</span>
+            <h3 class="council-person-name">Sri. Alex K. John</h3>
+            <p class="council-desc">Conducting liturgical choir training and sacred Syrian hymns for the Holy Qurbono.</p>
+          </div>
+
+          <!-- Slot 10: Kudumba Kootayma Coordinator -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/kudumba-coordinator.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Jacob George - Kudumba Kootayma Coordinator" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">KUDUMBA KOOTAYMA COORDINATOR</span>
+            <h3 class="council-person-name">Sri. Jacob George</h3>
+            <p class="council-desc">Overseeing family unit ward prayer meetings, pastoral neighborhood visits, and parish unity.</p>
+          </div>
+
+          <!-- Slot 11: Charity & Welfare In-Charge -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/charity-officer.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Philipose C. Mathew - Charity & Welfare In-Charge" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">CHARITY & WELFARE IN-CHARGE</span>
+            <h3 class="council-person-name">Sri. Philipose C. Mathew</h3>
+            <p class="council-desc">Managing benevolent relief, medical aid assistance, and educational support for needy families.</p>
+          </div>
+
+          <!-- Slot 12: Internal Auditor -->
+          <!-- Photo: Replace src="assets/avatar-placeholder.svg" with member photo e.g. "assets/auditor.jpg" -->
+          <div class="council-card">
+            <div class="council-avatar-wrap">
+              <img src="assets/avatar-placeholder.svg" alt="Sri. Abraham Koshy - Internal Auditor" class="council-photo" width="96" height="96" loading="lazy">
+            </div>
+            <span class="council-role-tag">INTERNAL AUDITOR</span>
+            <h3 class="council-person-name">Sri. Abraham Koshy</h3>
+            <p class="council-desc">Responsible for financial verification, audit reporting, and fiscal transparency to the General Body.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3 class="footer-col-title">St. Thomas Malankara Syrian Catholic Church</h3>
+        <p class="footer-heritage-desc">
+          Preserving the ancient West Syriac Antiochene liturgical heritage under the communion of the Syro-Malankara Catholic Major Archeparchy of Trivandrum.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-section-tag">PARISH RECTORY</span>
+        <address class="footer-address">
+          Odanavattom P.O., Kottarakara<br>
+          Kollam District, Kerala — 691 512<br>
+          Phone: <a href="tel:04742461020" class="footer-phone-link">0474-2461020</a>
+        </address>
+      </div>
+
+      <div class="footer-col">
+        <span class="footer-section-tag">ECCLESIASTICAL JURISDICTION</span>
+        <div class="footer-jurisdiction">
+          Major Archdiocese of Trivandrum<br>
+          Ayoor Ecclesiastical District<br>
+          Vicar: Rev. Fr. John Kizhakekkara
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <div>© 2026 St. Thomas Malankara Catholic Church, Odanavattom. All Rights Reserved.</div>
+        <div class="footer-nav-links" style="display:flex; gap:10px; flex-wrap:wrap; font-size:12px;">
+          <a href="index.html" style="color:#cbd5e1; text-decoration:none;">Home</a> •
+          <a href="about.html" style="color:#cbd5e1; text-decoration:none;">About</a> •
+          <a href="clergy.html" style="color:#cbd5e1; text-decoration:none;">Clergy</a> •
+          <a href="worship.html" style="color:#cbd5e1; text-decoration:none;">Worship</a> •
+          <a href="ministries.html" style="color:#cbd5e1; text-decoration:none;">Ministries</a> •
+          <a href="gallery.html" style="color:#cbd5e1; text-decoration:none;">Gallery</a> •
+          <a href="contact.html" style="color:#cbd5e1; text-decoration:none;">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('primary-nav');
+
+    mobileBtn.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      mobileBtn.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+</body>
+</html>
