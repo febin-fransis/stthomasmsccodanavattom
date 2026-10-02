@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mctfBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="70%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="mctfGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#855909"/>
+    </linearGradient>
+    <filter id="mctfShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#mctfBg)" stroke="url(#mctfGold)" stroke-width="4" filter="url(#mctfShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Radiant Glory Beams -->
+  <g stroke="#fef08a" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="52" x2="80" y2="28"/>
+    <line x1="80" y1="52" x2="58" y2="34"/>
+    <line x1="80" y1="52" x2="102" y2="34"/>
+    <line x1="80" y1="52" x2="44" y2="52"/>
+    <line x1="80" y1="52" x2="116" y2="52"/>
+  </g>
+
+  <!-- Laurel Wreath of Academic Honor -->
+  <g stroke="url(#mctfGold)" stroke-width="1.5" fill="none" opacity="0.75">
+    <path d="M42 98 C34 76, 40 50, 56 36"/>
+    <circle cx="44" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="39" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="42" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="50" cy="42" r="2" fill="#d4972e"/>
+    <path d="M118 98 C126 76, 120 50, 104 36"/>
+    <circle cx="116" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="121" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="118" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="110" cy="42" r="2" fill="#d4972e"/>
+  </g>
+
+  <!-- Flaming Torch of Wisdom & Truth (Deepam) -->
+  <g transform="translate(80, 48)" filter="url(#mctfShadow)">
+    <!-- Torch Flame -->
+    <path d="M0 -18 C-6 -8, -4 -3, 0 3 C4 -3, 6 -8, 0 -18 Z" fill="#f59e0b" stroke="#fef08a" stroke-width="1"/>
+    <path d="M0 -14 C-3 -7, -2 -3, 0 1 C2 -3, 3 -7, 0 -14 Z" fill="#ef4444"/>
+    <!-- Small Syrian Cross above flame -->
+    <line x1="0" y1="-26" x2="0" y2="-20" stroke="url(#mctfGold)" stroke-width="2"/>
+    <line x1="-3" y1="-23" x2="3" y2="-23" stroke="url(#mctfGold)" stroke-width="2"/>
+    <!-- Torch Bowl -->
+    <path d="M-8 3 L8 3 L5 9 L-5 9 Z" fill="url(#mctfGold)"/>
+    <rect x="-2" y="9" width="4" height="14" fill="url(#mctfGold)"/>
+  </g>
+
+  <!-- Open Textbook / Sacred Scripture -->
+  <g transform="translate(80, 83)" filter="url(#mctfShadow)">
+    <path d="M-28 -4 C-16 -8, -4 -4, 0 0 C4 -4, 16 -8, 28 -4 L26 14 C16 10, 4 13, 0 16 C-4 13, -16 10, -26 14 Z" fill="#f8fafc" stroke="#d4972e" stroke-width="1.2"/>
+    <path d="M0 0 L0 16" stroke="#d4972e" stroke-width="1.5"/>
+    <!-- Quill / Pen Symbol -->
+    <path d="M-15 4 L-5 10" stroke="#0284c7" stroke-width="1.5"/>
+    <path d="M15 4 L5 10" stroke="#0284c7" stroke-width="1.5"/>
+    <!-- Alpha Omega Text -->
+    <text x="-14" y="2" font-family="'Cinzel', serif" font-size="6.5" font-weight="700" fill="#0f172a" text-anchor="middle">TRUTH</text>
+    <text x="14" y="2" font-family="'Cinzel', serif" font-size="6.5" font-weight="700" fill="#0f172a" text-anchor="middle">LIGHT</text>
+  </g>
+
+  <!-- Ribbon Banner for MCTF -->
+  <path d="M30 114 L42 107 L118 107 L130 114 L118 121 L42 121 Z" fill="#1e3a8a" stroke="url(#mctfGold)" stroke-width="1.5" filter="url(#mctfShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="11.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">MCTF</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcMctf" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.5" font-weight="700" fill="#cbd5e1" letter-spacing="0.8">
+    <textPath href="#textArcMctf" startOffset="50%" text-anchor="middle">
+      MALANKARA CATHOLIC TEACHERS FORUM
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.2">ODANAVATTOM UNIT</text>
+  <circle cx="48" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="112" cy="135" r="1.5" fill="#d4972e"/>
+</svg>

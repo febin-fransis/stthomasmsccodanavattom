@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pcBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#241b35"/>
+      <stop offset="70%" stop-color="#140f20"/>
+      <stop offset="100%" stop-color="#09060f"/>
+    </radialGradient>
+    <linearGradient id="pcGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#855909"/>
+    </linearGradient>
+    <filter id="pcShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#pcBg)" stroke="url(#pcGold)" stroke-width="4" filter="url(#pcShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Radiant Glory Beams -->
+  <g stroke="#fef08a" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="52" x2="80" y2="28"/>
+    <line x1="80" y1="52" x2="58" y2="34"/>
+    <line x1="80" y1="52" x2="102" y2="34"/>
+    <line x1="80" y1="52" x2="44" y2="52"/>
+    <line x1="80" y1="52" x2="116" y2="52"/>
+  </g>
+
+  <!-- Laurel Garland of Leadership -->
+  <g stroke="url(#pcGold)" stroke-width="1.5" fill="none" opacity="0.75">
+    <path d="M42 98 C34 76, 40 50, 56 36"/>
+    <circle cx="44" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="39" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="42" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="50" cy="42" r="2" fill="#d4972e"/>
+    <path d="M118 98 C126 76, 120 50, 104 36"/>
+    <circle cx="116" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="121" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="118" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="110" cy="42" r="2" fill="#d4972e"/>
+  </g>
+
+  <!-- Church Sanctuary Facade & Pillar Motif -->
+  <g transform="translate(80, 56)" fill="url(#pcGold)" stroke="url(#pcGold)" filter="url(#pcShadow)">
+    <!-- Central St. Thomas Cross atop Church Dome -->
+    <rect x="-2" y="-24" width="4" height="18" rx="1"/>
+    <rect x="-8" y="-19" width="16" height="4" rx="1"/>
+    <circle cx="0" cy="-25" r="2"/>
+    <circle cx="-9" cy="-17" r="2"/>
+    <circle cx="9" cy="-17" r="2"/>
+
+    <!-- Church Pediment / Triangle Roof -->
+    <path d="M0 -6 L-24 10 L24 10 Z" fill="url(#pcGold)" stroke-width="1"/>
+    <circle cx="0" cy="4" r="3.5" fill="#140f20"/>
+
+    <!-- Pillars of the Council -->
+    <rect x="-22" y="11" width="4.5" height="18" fill="url(#pcGold)"/>
+    <rect x="-10" y="11" width="4.5" height="18" fill="url(#pcGold)"/>
+    <rect x="5.5" y="11" width="4.5" height="18" fill="url(#pcGold)"/>
+    <rect x="17.5" y="11" width="4.5" height="18" fill="url(#pcGold)"/>
+
+    <!-- Council Stewardship Keys / Scroll cross -->
+    <circle cx="0" cy="20" r="3.5" fill="#fef08a" stroke="#d4972e" stroke-width="1"/>
+    <!-- Base Foundation Steps -->
+    <rect x="-26" y="29" width="52" height="4" rx="1" fill="url(#pcGold)"/>
+    <rect x="-29" y="33" width="58" height="3" rx="1" fill="url(#pcGold)"/>
+  </g>
+
+  <!-- Ribbon Banner for PARISH COMMITTEE -->
+  <path d="M22 114 L34 107 L126 107 L138 114 L126 121 L34 121 Z" fill="#7c2d12" stroke="url(#pcGold)" stroke-width="1.5" filter="url(#pcShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">PARISH COMMITTEE</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcPc" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.6" font-weight="700" fill="#cbd5e1" letter-spacing="0.8">
+    <textPath href="#textArcPc" startOffset="50%" text-anchor="middle">
+      ST. THOMAS MALANKARA CATHOLIC CHURCH
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.2">ODANAVATTOM COUNCIL</text>
+  <circle cx="44" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="116" cy="135" r="1.5" fill="#d4972e"/>
+</svg>

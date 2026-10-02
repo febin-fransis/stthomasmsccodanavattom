@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mcaBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e3a6a"/>
+      <stop offset="70%" stop-color="#0e1f3d"/>
+      <stop offset="100%" stop-color="#071124"/>
+    </radialGradient>
+    <linearGradient id="mcaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#855909"/>
+    </linearGradient>
+    <filter id="mcaShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#mcaBg)" stroke="url(#mcaGold)" stroke-width="4" filter="url(#mcaShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Radiant Glory Beams -->
+  <g stroke="#fef08a" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="56" x2="80" y2="30"/>
+    <line x1="80" y1="56" x2="58" y2="38"/>
+    <line x1="80" y1="56" x2="102" y2="38"/>
+    <line x1="80" y1="56" x2="44" y2="56"/>
+    <line x1="80" y1="56" x2="116" y2="56"/>
+  </g>
+
+  <!-- Laurel Wreath of Victory / Kerala Fronds -->
+  <g stroke="url(#mcaGold)" stroke-width="1.5" fill="none" opacity="0.75">
+    <!-- Left wreath branch -->
+    <path d="M42 98 C34 76, 40 50, 56 36"/>
+    <circle cx="44" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="39" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="42" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="50" cy="42" r="2" fill="#d4972e"/>
+    <!-- Right wreath branch -->
+    <path d="M118 98 C126 76, 120 50, 104 36"/>
+    <circle cx="116" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="121" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="118" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="110" cy="42" r="2" fill="#d4972e"/>
+  </g>
+
+  <!-- Central Malankara Cross -->
+  <g transform="translate(80, 52)" fill="url(#mcaGold)" stroke="url(#mcaGold)" stroke-width="1.5" filter="url(#mcaShadow)">
+    <!-- Vertical beam -->
+    <rect x="-3" y="-22" width="6" height="32" rx="1"/>
+    <!-- Horizontal beam -->
+    <rect x="-14" y="-12" width="28" height="6" rx="1"/>
+    <!-- Trefoil leaf ends -->
+    <circle cx="0" cy="-24" r="3.2"/>
+    <circle cx="-16" cy="-9" r="3.2"/>
+    <circle cx="16" cy="-9" r="3.2"/>
+    <!-- Steps base -->
+    <path d="M-6 10 L6 10 L9 13 L-9 13 Z"/>
+    <path d="M-11 13 L11 13 L13 16 L-13 16 Z"/>
+  </g>
+
+  <!-- Open Holy Scripture (Bible) -->
+  <g transform="translate(80, 84)" filter="url(#mcaShadow)">
+    <!-- Book pages background -->
+    <path d="M-28 -4 C-16 -8, -4 -4, 0 0 C4 -4, 16 -8, 28 -4 L26 14 C16 10, 4 13, 0 16 C-4 13, -16 10, -26 14 Z" fill="#f8fafc" stroke="#d4972e" stroke-width="1.2"/>
+    <path d="M0 0 L0 16" stroke="#d4972e" stroke-width="1.5"/>
+    <!-- Page text lines (Alpha & Omega) -->
+    <text x="-14" y="5" font-family="'Cinzel', serif" font-size="7.5" font-weight="700" fill="#0f172a" text-anchor="middle">Α</text>
+    <text x="14" y="5" font-family="'Cinzel', serif" font-size="7.5" font-weight="700" fill="#0f172a" text-anchor="middle">Ω</text>
+    <line x1="-22" y1="9" x2="-6" y2="9" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="6" y1="9" x2="22" y2="9" stroke="#94a3b8" stroke-width="1"/>
+  </g>
+
+  <!-- Ribbon Banner for MCA -->
+  <path d="M32 114 L44 107 L116 107 L128 114 L116 121 L44 121 Z" fill="#047857" stroke="url(#mcaGold)" stroke-width="1.5" filter="url(#mcaShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2.5">MCA</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcMca" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.8" font-weight="700" fill="#cbd5e1" letter-spacing="0.9">
+    <textPath href="#textArcMca" startOffset="50%" text-anchor="middle">
+      MALANKARA CATHOLIC ASSOCIATION
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle / Parish Unit -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.2">ODANAVATTOM PARISH</text>
+  <circle cx="48" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="112" cy="135" r="1.5" fill="#d4972e"/>
+</svg>

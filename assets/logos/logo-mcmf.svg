@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mcmfBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#4c1d38"/>
+      <stop offset="70%" stop-color="#2c0c1f"/>
+      <stop offset="100%" stop-color="#14040d"/>
+    </radialGradient>
+    <linearGradient id="mcmfGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#855909"/>
+    </linearGradient>
+    <filter id="mcmfShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#mcmfBg)" stroke="url(#mcmfGold)" stroke-width="4" filter="url(#mcmfShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Radiant Glory Beams -->
+  <g stroke="#fef08a" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="52" x2="80" y2="28"/>
+    <line x1="80" y1="52" x2="58" y2="34"/>
+    <line x1="80" y1="52" x2="102" y2="34"/>
+    <line x1="80" y1="52" x2="44" y2="52"/>
+    <line x1="80" y1="52" x2="116" y2="52"/>
+  </g>
+
+  <!-- Floral Lily Garland of Motherhood -->
+  <g stroke="url(#mcmfGold)" stroke-width="1.5" fill="none" opacity="0.75">
+    <path d="M42 98 C34 76, 40 50, 56 36"/>
+    <circle cx="44" cy="82" r="2.5" fill="#f43f5e"/>
+    <circle cx="39" cy="68" r="2.5" fill="#f43f5e"/>
+    <circle cx="42" cy="54" r="2.5" fill="#f43f5e"/>
+    <circle cx="50" cy="42" r="2.5" fill="#f43f5e"/>
+    <path d="M118 98 C126 76, 120 50, 104 36"/>
+    <circle cx="116" cy="82" r="2.5" fill="#f43f5e"/>
+    <circle cx="121" cy="68" r="2.5" fill="#f43f5e"/>
+    <circle cx="118" cy="54" r="2.5" fill="#f43f5e"/>
+    <circle cx="110" cy="42" r="2.5" fill="#f43f5e"/>
+  </g>
+
+  <!-- Blessed Virgin Mary & Divine Infant Silhouette Motif -->
+  <g transform="translate(80, 56)" filter="url(#mcmfShadow)">
+    <!-- Halo of Mother & Child -->
+    <circle cx="0" cy="-6" r="20" fill="none" stroke="#fef08a" stroke-width="1.2" stroke-dasharray="3 2" opacity="0.8"/>
+    <!-- Syrian Cross atop -->
+    <line x1="0" y1="-28" x2="0" y2="-21" stroke="url(#mcmfGold)" stroke-width="2"/>
+    <line x1="-3.5" y1="-25" x2="3.5" y2="-25" stroke="url(#mcmfGold)" stroke-width="2"/>
+    
+    <!-- Mother Mary Veil & Contour -->
+    <path d="M-12 18 C-14 4, -10 -10, 0 -14 C10 -10, 14 4, 12 18 C8 24, -8 24, -12 18 Z" fill="#f8fafc" stroke="url(#mcmfGold)" stroke-width="1.2"/>
+    <!-- Infant in Arms -->
+    <circle cx="4" cy="4" r="5" fill="#fef08a"/>
+    <path d="M-1 9 C0 7, 7 7, 8 13 C4 15, 0 14, -1 9 Z" fill="#e2e8f0" stroke="#d4972e" stroke-width="1"/>
+  </g>
+
+  <!-- Holy Rosary Garland connecting -->
+  <g transform="translate(80, 85)" filter="url(#mcmfShadow)">
+    <path d="M-22 0 C-10 14, 10 14, 22 0" fill="none" stroke="#fef08a" stroke-width="1.2" stroke-dasharray="2 3"/>
+    <circle cx="0" cy="8" r="2" fill="#d4972e"/>
+    <line x1="0" y1="10" x2="0" y2="18" stroke="#d4972e" stroke-width="1.5"/>
+    <line x1="-3" y1="13" x2="3" y2="13" stroke="#d4972e" stroke-width="1.5"/>
+  </g>
+
+  <!-- Ribbon Banner for MCMF -->
+  <path d="M30 114 L42 107 L118 107 L130 114 L118 121 L42 121 Z" fill="#9d174d" stroke="url(#mcmfGold)" stroke-width="1.5" filter="url(#mcmfShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">MCMF</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcMcmf" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.3" font-weight="700" fill="#cbd5e1" letter-spacing="0.8">
+    <textPath href="#textArcMcmf" startOffset="50%" text-anchor="middle">
+      MALANKARA CATHOLIC MOTHER'S FORUM
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.2">MATHRUVEDI • ODANAVATTOM</text>
+  <circle cx="42" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="118" cy="135" r="1.5" fill="#d4972e"/>
+</svg>

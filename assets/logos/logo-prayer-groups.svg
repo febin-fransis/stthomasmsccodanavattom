@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pgBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="70%" stop-color="#052e16"/>
+      <stop offset="100%" stop-color="#021a0c"/>
+    </radialGradient>
+    <linearGradient id="pgGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#855909"/>
+    </linearGradient>
+    <filter id="pgShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#pgBg)" stroke="url(#pgGold)" stroke-width="4" filter="url(#pgShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Radiant Glory Beams -->
+  <g stroke="#fef08a" stroke-width="1" opacity="0.3">
+    <line x1="80" y1="52" x2="80" y2="28"/>
+    <line x1="80" y1="52" x2="58" y2="34"/>
+    <line x1="80" y1="52" x2="102" y2="34"/>
+    <line x1="80" y1="52" x2="44" y2="52"/>
+    <line x1="80" y1="52" x2="116" y2="52"/>
+  </g>
+
+  <!-- Olive Branch of Community Peace -->
+  <g stroke="url(#pgGold)" stroke-width="1.5" fill="none" opacity="0.75">
+    <path d="M42 98 C34 76, 40 50, 56 36"/>
+    <circle cx="44" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="39" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="42" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="50" cy="42" r="2" fill="#d4972e"/>
+    <path d="M118 98 C126 76, 120 50, 104 36"/>
+    <circle cx="116" cy="82" r="2" fill="#d4972e"/>
+    <circle cx="121" cy="68" r="2" fill="#d4972e"/>
+    <circle cx="118" cy="54" r="2" fill="#d4972e"/>
+    <circle cx="110" cy="42" r="2" fill="#d4972e"/>
+  </g>
+
+  <!-- Central St. Thomas Cross & 3 Stars (St. Thomas, St. Mary, St. Joseph) -->
+  <g transform="translate(80, 52)" fill="url(#pgGold)" stroke="url(#pgGold)" stroke-width="1.5" filter="url(#pgShadow)">
+    <rect x="-2.5" y="-22" width="5" height="30" rx="1"/>
+    <rect x="-12" y="-12" width="24" height="5" rx="1"/>
+    <!-- Cross trefoil points -->
+    <circle cx="0" cy="-24" r="2.8"/>
+    <circle cx="-14" cy="-9.5" r="2.8"/>
+    <circle cx="14" cy="-9.5" r="2.8"/>
+
+    <!-- 3 Stars representing the 3 Patronal Prayer Groups -->
+    <!-- 1: St. Thomas (top center) -->
+    <path d="M0 -34 L2 -30 L6 -30 L3 -27 L4 -23 L0 -25 L-4 -23 L-3 -27 L-6 -30 L-2 -30 Z" fill="#fef08a"/>
+    <!-- 2: St. Mary (left) -->
+    <path d="M-28 -4 L-26 0 L-22 0 L-25 3 L-24 7 L-28 5 L-32 7 L-31 3 L-34 0 L-30 0 Z" fill="#fef08a"/>
+    <!-- 3: St. Joseph (right) -->
+    <path d="M28 -4 L30 0 L34 0 L31 3 L32 7 L28 5 L24 7 L25 3 L22 0 L26 0 Z" fill="#fef08a"/>
+  </g>
+
+  <!-- Praying Hands & House of Domestic Church -->
+  <g transform="translate(80, 84)" filter="url(#pgShadow)">
+    <!-- House roof contour -->
+    <path d="M-26 12 L0 -6 L26 12" stroke="url(#pgGold)" stroke-width="2" fill="none"/>
+    <!-- Praying hands silhouette -->
+    <path d="M-6 8 C-7 0, -4 -8, 0 -12 C4 -8, 7 0, 6 8 C4 14, -4 14, -6 8 Z" fill="#f8fafc" stroke="#d4972e" stroke-width="1.2"/>
+    <line x1="0" y1="-12" x2="0" y2="10" stroke="#d4972e" stroke-width="1"/>
+  </g>
+
+  <!-- Ribbon Banner for PRAYER GROUPS -->
+  <path d="M24 114 L36 107 L124 107 L136 114 L124 121 L36 121 Z" fill="#15803d" stroke="url(#pgGold)" stroke-width="1.5" filter="url(#pgShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="9.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">PRAYER GROUPS</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcPg" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.3" font-weight="700" fill="#cbd5e1" letter-spacing="0.8">
+    <textPath href="#textArcPg" startOffset="50%" text-anchor="middle">
+      ST. THOMAS • ST. MARY'S • ST. JOSEPH
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.2">KUDUMBA KOOTTAYMA</text>
+  <circle cx="44" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="116" cy="135" r="1.5" fill="#d4972e"/>
+</svg>

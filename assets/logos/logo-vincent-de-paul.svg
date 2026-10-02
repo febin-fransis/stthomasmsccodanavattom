@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="ssvpBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="65%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="ssvpGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#92620c"/>
+    </linearGradient>
+    <linearGradient id="heartRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <filter id="ssvpShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#ssvpBg)" stroke="url(#ssvpGold)" stroke-width="4" filter="url(#ssvpShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Compassion Radiance Rays -->
+  <g stroke="#fef08a" stroke-width="1" opacity="0.35">
+    <line x1="80" y1="50" x2="80" y2="28"/>
+    <line x1="80" y1="50" x2="58" y2="34"/>
+    <line x1="80" y1="50" x2="102" y2="34"/>
+    <line x1="80" y1="50" x2="42" y2="48"/>
+    <line x1="80" y1="50" x2="118" y2="48"/>
+  </g>
+
+  <!-- Sacred Christian Cross of Christ -->
+  <g transform="translate(80, 42)" fill="url(#ssvpGold)" filter="url(#ssvpShadow)">
+    <rect x="-2.5" y="-18" width="5" height="28" rx="1"/>
+    <rect x="-11" y="-10" width="22" height="5" rx="1"/>
+    <!-- Cross endpoints -->
+    <circle cx="0" cy="-18" r="2.2"/>
+    <circle cx="-11" cy="-7.5" r="2.2"/>
+    <circle cx="11" cy="-7.5" r="2.2"/>
+  </g>
+
+  <!-- Heart of Compassion & Charity -->
+  <path d="M80 72 C80 62, 96 52, 102 65 C108 78, 88 88, 80 95 C72 88, 52 78, 58 65 C64 52, 80 62, 80 72 Z" fill="url(#heartRed)" opacity="0.35"/>
+
+  <!-- Hands of Charity (Sharing Bread / Aid) Motif -->
+  <g filter="url(#ssvpShadow)" fill="none" stroke="url(#ssvpGold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left Cupped Hand -->
+    <path d="M52 82 C56 74, 66 72, 74 77 C77 79, 78 83, 76 86 L66 93 C60 95, 54 90, 52 82 Z" fill="#1e293b"/>
+    <!-- Right Cupped Hand -->
+    <path d="M108 82 C104 74, 94 72, 86 77 C83 79, 82 83, 84 86 L94 93 C100 95, 106 90, 108 82 Z" fill="#1e293b"/>
+  </g>
+
+  <!-- Bread of Life / Wheat Ears in Center of Hands -->
+  <g transform="translate(80, 78)" fill="#fef08a" filter="url(#ssvpShadow)">
+    <ellipse cx="0" cy="0" rx="6" ry="4" fill="url(#ssvpGold)"/>
+    <line x1="-3" y1="0" x2="3" y2="0" stroke="#78350f" stroke-width="1"/>
+    <!-- Wheat sheaf stalks -->
+    <path d="M0 4 C-4 10, -8 16, -12 20" stroke="url(#ssvpGold)" stroke-width="1.5" fill="none"/>
+    <path d="M0 4 C4 10, 8 16, 12 20" stroke="url(#ssvpGold)" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- Ribbon Banner for SSVP -->
+  <path d="M28 114 L40 107 L120 107 L132 114 L120 121 L40 121 Z" fill="#be123c" stroke="url(#ssvpGold)" stroke-width="1.5" filter="url(#ssvpShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="11.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">SSVP</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcSsvp" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.3" font-weight="700" fill="#cbd5e1" letter-spacing="0.7">
+    <textPath href="#textArcSsvp" startOffset="50%" text-anchor="middle">
+      SOCIETY OF ST. VINCENT DE PAUL
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle with International Motto: SERVIENS IN SPE -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.1">SERVIENS IN SPE • ODANAVATTOM</text>
+  <circle cx="34" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="126" cy="135" r="1.5" fill="#d4972e"/>
+</svg>

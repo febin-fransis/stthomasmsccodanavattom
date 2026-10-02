@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <radialGradient id="mcclBg" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1e3a6a"/>
+      <stop offset="70%" stop-color="#0c1a33"/>
+      <stop offset="100%" stop-color="#060e1d"/>
+    </radialGradient>
+    <linearGradient id="mcclGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="45%" stop-color="#d4972e"/>
+      <stop offset="100%" stop-color="#92620c"/>
+    </linearGradient>
+    <linearGradient id="lampFlame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="60%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+    <filter id="mcclShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="url(#mcclBg)" stroke="url(#mcclGold)" stroke-width="4" filter="url(#mcclShadow)"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#d4972e" stroke-width="1" stroke-dasharray="2 3" opacity="0.6"/>
+
+  <!-- Radiating Beams of Wisdom / Scripture -->
+  <g stroke="#fef08a" stroke-width="1.2" opacity="0.4">
+    <line x1="80" y1="46" x2="80" y2="24"/>
+    <line x1="80" y1="46" x2="56" y2="30"/>
+    <line x1="80" y1="46" x2="104" y2="30"/>
+    <line x1="80" y1="46" x2="38" y2="44"/>
+    <line x1="80" y1="46" x2="122" y2="44"/>
+    <line x1="80" y1="46" x2="34" y2="62"/>
+    <line x1="80" y1="46" x2="126" y2="62"/>
+  </g>
+
+  <!-- Cross at Crown -->
+  <g transform="translate(80, 24) scale(0.6)" fill="url(#mcclGold)" stroke="url(#mcclGold)" stroke-width="1.5">
+    <rect x="-2" y="-10" width="4" height="20" rx="1"/>
+    <rect x="-8" y="-5" width="16" height="4" rx="1"/>
+    <circle cx="0" cy="-12" r="2"/>
+    <circle cx="-10" cy="-3" r="2"/>
+    <circle cx="10" cy="-3" r="2"/>
+  </g>
+
+  <!-- Burning Deepam / Sacred Lamp of Truth -->
+  <g transform="translate(80, 52)" filter="url(#mcclShadow)">
+    <!-- Flame -->
+    <path d="M0 -14 C-4 -8, -4 -2, 0 4 C4 -2, 4 -8, 0 -14 Z" fill="url(#lampFlame)"/>
+    <path d="M0 -10 C-2 -6, -2 -3, 0 2 C2 -3, 2 -6, 0 -10 Z" fill="#ffffff"/>
+    <!-- Lamp Bowl (Traditional Thookkuvilakku/Nilavilakku motif) -->
+    <path d="M-10 6 C-12 12, 12 12, 10 6 Z" fill="url(#mcclGold)"/>
+    <!-- Stem & Base -->
+    <rect x="-2" y="10" width="4" height="8" fill="url(#mcclGold)"/>
+    <ellipse cx="0" cy="18" rx="8" ry="2.5" fill="url(#mcclGold)"/>
+  </g>
+
+  <!-- Open Holy Bible (Scripture & Catechism) -->
+  <g transform="translate(80, 84)" filter="url(#mcclShadow)">
+    <path d="M-30 -2 C-18 -7, -4 -3, 0 1 C4 -3, 18 -7, 30 -2 L28 17 C16 12, 4 15, 0 18 C-4 15, -16 12, -28 17 Z" fill="#ffffff" stroke="#d4972e" stroke-width="1.4"/>
+    <path d="M0 1 L0 18" stroke="#d4972e" stroke-width="1.6"/>
+    <!-- Child figures / silhouettes reading on page -->
+    <circle cx="-14" cy="5" r="2.5" fill="#d4972e"/>
+    <path d="M-19 13 C-19 9, -9 9, -9 13 Z" fill="#d4972e"/>
+    <circle cx="14" cy="5" r="2.5" fill="#d4972e"/>
+    <path d="M9 13 C9 9, 19 9, 19 13 Z" fill="#d4972e"/>
+  </g>
+
+  <!-- Ribbon Banner for MCCL -->
+  <path d="M30 114 L42 107 L118 107 L130 114 L118 121 L42 121 Z" fill="#1d4ed8" stroke="url(#mcclGold)" stroke-width="1.5" filter="url(#mcclShadow)"/>
+  <text x="80" y="117.5" font-family="'Cinzel', 'Georgia', serif" font-size="11.5" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="2">MCCL</text>
+
+  <!-- Arch Text Upper Border -->
+  <path id="textArcMccl" d="M 28 84 A 56 56 0 0 1 132 84" fill="none"/>
+  <text font-family="'Inter', sans-serif" font-size="6.5" font-weight="700" fill="#cbd5e1" letter-spacing="0.8">
+    <textPath href="#textArcMccl" startOffset="50%" text-anchor="middle">
+      MALANKARA CATHOLIC CATECHISM
+    </textPath>
+  </text>
+
+  <!-- Bottom Subtitle -->
+  <text x="80" y="137" font-family="'Inter', sans-serif" font-size="6.2" font-weight="700" fill="#d4972e" text-anchor="middle" letter-spacing="1.2">SUNDAY SCHOOL • ODANAVATTOM</text>
+  <circle cx="44" cy="135" r="1.5" fill="#d4972e"/>
+  <circle cx="116" cy="135" r="1.5" fill="#d4972e"/>
+</svg>
